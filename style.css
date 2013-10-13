@@ -1,7 +1,7 @@
 body{
 	margin: 0 auto;
 	padding: 0;
-	font-family: Aldrich;
+	font-family: 'Titillium Web', sans-serif;
 	background-color: #fff;
 }
 .container{
@@ -15,7 +15,7 @@ body{
 }
 .title{
 	padding: 10px;
-	width: 200px;
+	width: 210px;
 
 	border-top-right-radius:75px;
 	border-bottom-right-radius:75px;
@@ -25,13 +25,13 @@ body{
 	-moz-border-radius-bottomright: 75px;
 
 	background-color: #3498db;
-	font-family: Aldrich;
 	
 	color: #fff;
 }
 h1{
 	font-size: 25px;
-	font-weight: 100;
+	font-weight: 600;
+letter-spacing: 2px;
 }
 
 .menu-bar{
@@ -40,7 +40,6 @@ h1{
 }
 a{
 	letter-spacing: 1px;
-	font-family: Aldrich;
 	text-decoration: none;
 	color: #4EA1D7;
 }
@@ -78,11 +77,12 @@ img{
 	-moz-border-radius-bottomright: 200px;
 }
 .links{
-	font-family: Aldrich;
 	color: #7f8c8d;
 	margin-left: 20px;
 	margin-top: 40px;
 	line-height: 15px;
+	font-weight: 300;
+	letter-spacing: 1px;
 	
 }
 
@@ -91,6 +91,7 @@ img{
 	color: #2980b9;
 	}
 .main{
+	
 	margin-top: 40px;
 	width: 610px;
 	float: left;
@@ -98,8 +99,9 @@ img{
 }
 
 .content{
+	margin-bottom: 50px;
 	font-size: 30px;
-	font-family: Arial;
+	font-weight: 300;
 	color: #2c3e50;
 }
 .clear{clear: both;}
