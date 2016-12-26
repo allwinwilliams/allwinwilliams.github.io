@@ -173,6 +173,7 @@ a,a:hover, a:active{
 		text-align: center;
 	}
 	#interests h4{
+		margin-top: 10px;
 		height: 40px;
 	}
 	#myself .hidden-md-up{
