@@ -169,21 +169,6 @@ a,a:hover, a:active{
 	html,body,*{
 		overflow-x: hidden !important;
 	}
-	#header-blue{
-	content: "";
-    position: absolute;
-    width: 200%;
-    height: 645px;
-    top: -200px;
-    left: -50%;
-    z-index: -1;
-    background-color: #2196f3;
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-}
 	#header h1{
 		text-align: center;
 	}
