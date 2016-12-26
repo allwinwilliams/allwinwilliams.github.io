@@ -208,7 +208,7 @@ a,a:hover, a:active{
 }
 @media (max-width: 543px) { 
 	#header img{
-		width: 200px;
+		width: 300px;
 		display: block;
 		margin: 0 auto;
 	}
@@ -239,6 +239,6 @@ a,a:hover, a:active{
 }
 @media(max-width: 575px){
 	#header img{
-		
+
 	}
 }
