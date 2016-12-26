@@ -1,48 +1,187 @@
-.layout-transparent {
-  background: url('./img/header.jpg') center top / cover;
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 150%;
+  width: 100%;
+  overflow-x: hidden;
 }
-.layout-transparent .mdl-layout__header,
-.layout-transparent .mdl-layout__drawer-button,
-.mdl-layout__header,
-.mdl-layout__header-row .mdl-navigation__link
- {
-  color: #fff;
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 100px;
+  background-color: #fafafa;
 }
-.layout-transparent-container{
-	height: 300px;
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
 }
-.nav-header-content{
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#header {
+  padding: 0px 0px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+section{
+	min-height: 300px;
+}
+div{
+	margin:10px 0;
+}
+b{
+	font-weight: 600;
+}
+#header-blue{
+	content: "";
+    position: absolute;
+    width: 200%;
+    height: 645px;
+    top: -200px;
+    left: -50%;
+    z-index: -1;
+    background-color: #2196f3;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+#myself{
+	
+}
+
+#myself .container{
+	padding-bottom: 50px;
+	border-bottom: 1px solid #bdbdbd;
+}
+#moments{
+	padding: 40px 0;
+}
+.header-img{
+	background: url("./img/banner.png") bottom no-repeat;
+    height: 430px;
+    margin: 0;
+}
+.myself-img{
+	background: url("./img/myself.png") center no-repeat;
+    height: 425px;
+    margin: 0;
+}
+.header-content{
+	margin-top: 40px;
+}
+.header-text{
+	margin-top: 50px;
+}
+.color-white{
+	color:#fafafa;
+}
+.color-black{
+	color:#424242;
+}
+.color-blue{
+	color:#2196f3;
+}
+.bg-white{
+	background-color: #fafafa;
+}
+.bg-grey{
+	background-color: #f5f5f5;
+}
+.bg-blue{
+	background-color: #2196f3;
+}
+.bg-none{
+	background: none;
+}
+.nav-item .nav-link{
+	color: #fafafa;
+}
+#myself h1, #stay-connected h1, #interests h1,#moments h1{
+	padding: 1em 0;
+}
+.nav-item{
+	margin:0 20px;
+	width: 60px;
+	text-align: center;
+	border-radius:2em;
+}
+.nav-item .nav-link{
+	color: #fafafa !important;
+	font-weight: 300;
+	font-size: 12px;
+}
+.navbar-nav .nav-link {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+.text-center{
 	text-align: center;
 }
-#about>.mdl-grid{
-	max-width: 1000px;
-	padding-bottom: 40px;
+.active{
+	background-color: #fafafa;
 }
-.social-link>a{
-	width: 200px;
+.active .nav-link{
+	color: #2196f3 !important;
 }
-#connect{
-	padding: 100px 0px;
+.m-0-a{
+	margin: 0 auto;
 }
-.home-content{
-	line-height: 50px;
+.mail-id, .social-links{
+	padding: 30px 0;
 }
-.demo-card-square.mdl-card {
-    width: 320px;
-    height: 320px;
-  }
-.demo-card-square > .mdl-card__title {
-    color: #fff;
-    background: url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
-  }
-.aw-section-2-title{
-	padding: 20px;
+h1{
+	font-weight: 600;
 }
-.friends-img{
-	background: url("./img/friends.png") center top / cover;
-	height: 200px;
+#header h1{
+	font-weight: 800;
 }
-.family-img{
-	background: url("./img/family.png") center / cover;
-	height: 200px;
+#stay-connected{
+	border-top: 1px solid #bdbdbd;
+}
+a,a:hover, a:active{
+	color: inherit;
+	text-decoration: none !important;
+}
+.float-right{
+	float: right;
+}
+@media (max-width: 767px) { 
+	#header h1{
+		text-align: center;
+	}
+	#header-blue{
+		height: 765px;
+	}
+	.float-xs-right{
+		float: none !important;
+	}
+	nav{
+		text-align: center;
+	}
+	#interests img{
+		margin-top: 30px;
+	}
+	#myself .hidden-md-up{
+		padding: 10px 30px;
+	}
 }
