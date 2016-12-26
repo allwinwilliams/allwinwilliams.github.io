@@ -50,21 +50,7 @@ div{
 b{
 	font-weight: 600;
 }
-#header-blue{
-	content: "";
-    position: absolute;
-    width: 200%;
-    height: 645px;
-    top: -200px;
-    left: -50%;
-    z-index: -1;
-    background-color: #2196f3;
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-}
+
 #myself{
 	
 }
@@ -175,18 +161,10 @@ a,a:hover, a:active{
 	#header-blue{
 		content: "";
 	    position: absolute;
-	    width: 200%;
-	    height: 765px;
-	    top: -200px;
-	    left: -50%;
+	    width: 100%;
+	    height: 620px;
 	    z-index: -1;
-	    background-color: #2196f3;
-	    -webkit-transform: rotate(-3deg);
-	    -moz-transform: rotate(-3deg);
-	    -ms-transform: rotate(-3deg);
-	    -o-transform: rotate(-3deg);
-	    transform: rotate(-3deg);
-			
+	    background-color: #2196f3;	
 	}
 	.float-xs-right{
 		float: none !important;
@@ -200,4 +178,25 @@ a,a:hover, a:active{
 	#myself .hidden-md-up{
 		padding: 10px 30px;
 	}
+	.header-content{
+		margin-top: 0;
+	}
+}
+@media (min-width: 768px) { 
+	#header-blue{
+	content: "";
+    position: absolute;
+    width: 200%;
+    height: 645px;
+    top: -200px;
+    left: -50%;
+    z-index: -1;
+    background-color: #2196f3;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+	}
+
 }
