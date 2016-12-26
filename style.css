@@ -173,7 +173,20 @@ a,a:hover, a:active{
 		text-align: center;
 	}
 	#header-blue{
-		height: 765px;
+		content: "";
+	    position: absolute;
+	    width: 200%;
+	    height: 765px;
+	    top: -200px;
+	    left: -50%;
+	    z-index: -1;
+	    background-color: #2196f3;
+	    -webkit-transform: rotate(-3deg);
+	    -moz-transform: rotate(-3deg);
+	    -ms-transform: rotate(-3deg);
+	    -o-transform: rotate(-3deg);
+	    transform: rotate(-3deg);
+			
 	}
 	.float-xs-right{
 		float: none !important;
