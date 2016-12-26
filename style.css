@@ -172,7 +172,7 @@ a,a:hover, a:active{
 	#header-blue{
 	content: "";
     position: absolute;
-    width: 150%;
+    width: 200%;
     height: 645px;
     top: -200px;
     left: -50%;
@@ -183,7 +183,6 @@ a,a:hover, a:active{
     -ms-transform: rotate(-3deg);
     -o-transform: rotate(-3deg);
     transform: rotate(-3deg);
-    overflow-x: hidden !important;
 }
 	#header h1{
 		text-align: center;
