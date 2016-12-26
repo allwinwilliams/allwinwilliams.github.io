@@ -162,7 +162,7 @@ a,a:hover, a:active{
 		content: "";
 	    position: absolute;
 	    width: 100%;
-	    height: 620px;
+	    height: 520px;
 	    z-index: -1;
 	    background-color: #2196f3;	
 	}
@@ -181,13 +181,16 @@ a,a:hover, a:active{
 	.header-content{
 		margin-top: 0;
 	}
+	.header-text{
+		margin-top: 0px;
+	}
 }
 @media (min-width: 768px) { 
 	#header-blue{
 	content: "";
     position: absolute;
     width: 200%;
-    height: 645px;
+    height: 620px;
     top: -200px;
     left: -50%;
     z-index: -1;
@@ -198,5 +201,44 @@ a,a:hover, a:active{
     -o-transform: rotate(-3deg);
     transform: rotate(-3deg);
 	}
+	#header img{
+		margin-top: 25px;
+	}
 
+}
+@media (max-width: 543px) { 
+	#header img{
+		width: 200px;
+		display: block;
+		margin: 0 auto;
+	}
+ }
+@media (min-width: 544px) and (max-width: 767px) { 
+	#header img{
+		width: 300px;
+	}
+ }
+@media (min-width: 768px) and (max-width: 991px) { 
+	#header img{
+		width: 300px;
+	}
+	#header-blue{
+		height: 650px;
+	}
+ }
+@media (min-width: 992px) and (max-width: 1199px) { 
+	#header img{
+		width: 300px;
+	}
+
+ }
+@media (min-width: 1200px) { 
+	#header img{
+		width: 300px;
+	}
+}
+@media(max-width: 575px){
+	#header img{
+		
+	}
 }
