@@ -166,7 +166,7 @@ a,a:hover, a:active{
 	float: right;
 }
 @media (max-width: 767px) { 
-	html{
+	html,body,*{
 		overflow-x: hidden !important;
 	}
 	#header h1{
