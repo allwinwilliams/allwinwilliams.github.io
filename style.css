@@ -188,7 +188,10 @@ a,a:hover, a:active{
     	padding-bottom: 10px;
 	}
 	#myself h1, #stay-connected h1, #interests h1, #moments h1 {
-    padding: 0.5em 0;
+    padding: 0.2em 0;
+	}
+	div{
+		margin-top: 0;
 	}
 }
 
