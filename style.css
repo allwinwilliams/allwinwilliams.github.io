@@ -172,8 +172,8 @@ a,a:hover, a:active{
 	nav{
 		text-align: center;
 	}
-	#interests img{
-		margin-top: 30px;
+	#interests h4{
+		height: 40px;
 	}
 	#myself .hidden-md-up{
 		padding: 10px 30px;
@@ -184,7 +184,14 @@ a,a:hover, a:active{
 	.header-text{
 		margin-top: 0px;
 	}
+	#myself .container {
+    	padding-bottom: 10px;
+	}
+	#myself h1, #stay-connected h1, #interests h1, #moments h1 {
+    padding: 0.5em 0;
+	}
 }
+
 @media (min-width: 768px) { 
 	#header-blue{
 	content: "";
