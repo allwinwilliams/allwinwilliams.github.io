@@ -62,16 +62,6 @@ b{
 #moments{
 	padding: 40px 0;
 }
-.header-img{
-	background: url("./img/banner.png") bottom no-repeat;
-    height: 430px;
-    margin: 0;
-}
-.myself-img{
-	background: url("./img/myself.png") center no-repeat;
-    height: 425px;
-    margin: 0;
-}
 .header-content{
 	margin-top: 40px;
 }
@@ -151,6 +141,7 @@ a,a:hover, a:active{
 .float-right{
 	float: right;
 }
+
 @media (max-width: 767px) { 
 	html,body,*{
 		overflow-x: hidden !important;
@@ -178,6 +169,10 @@ a,a:hover, a:active{
 	}
 	#myself .hidden-md-up{
 		padding: 10px 30px;
+	}
+	#interests .interest-icon{
+		max-width: 60% !important;
+    	margin: 0 20%;
 	}
 	.header-content{
 		margin-top: 0;
@@ -219,6 +214,7 @@ a,a:hover, a:active{
 		margin-top: 25px;
 	}
 
+
 }
 @media (max-width: 543px) { 
 	#header img{
@@ -249,6 +245,9 @@ a,a:hover, a:active{
 @media (min-width: 1200px) { 
 	#header img{
 		width: 300px;
+	}
+	#myself img{
+		width: 400px;
 	}
 }
 @media(max-width: 575px){
