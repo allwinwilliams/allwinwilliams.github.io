@@ -29,14 +29,15 @@ body{
 }
 
 #banner{
-  background: rgb(85,191,89);
-  background: linear-gradient(135deg, rgba(85,191,89,1) 0%, rgba(41,136,45,1) 100%);
+  h1{
+    // text-shadow: 0.5px 0.5px 0.5px #555;
+    font-size: 3em;
+  }
 }
 
-.parallax{
-  img{
-    position: fixed;
-  }
+#banner{
+  background: rgb(85,191,89);
+  background: linear-gradient(135deg, rgba(85,191,89,1) 0%, rgba(41,136,45,1) 100%);
 }
 
 #tools{
@@ -48,5 +49,30 @@ body{
 }
 
 #myself{
-  box-shadow: 0px 0px 15px 0px #666666;
+  box-shadow: 2px 2px 5px 0px #555;
+}
+
+#projects{
+  .project{
+
+  }
+
+  .project a div{
+    // opacity: 0.75;
+    background-color: $blue-grey-light;
+    transition: 0.3s;
+    min-height: 60px;
+  }
+
+  .project a:hover{
+    div{
+      // opacity: 1;
+      background-color: #49565D;
+      // min-height: 200px;
+      .project-description{
+        color: $dark-grey;
+      }
+    }
+
+  }
 }
