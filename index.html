@@ -1,195 +1,146 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Allwin Williams</title>
-	<meta name="description" content="Allwin Williams's Personal Website" />
-	<meta name="author" content="Allwin Williams" />
-    <meta name="keywords" content="allwin, williams, samuvel, samuel, it, soimbatore, trichy, lalgudi, india" />
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16">
-	<link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,800" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<!-- <nav class="navbar navbar-light bg-faded bg-none">
-      	<span class="navbar-text float-xs-right text-muted">
-		  <ul class="nav navbar-nav color-white">
-		    <li class="nav-item active">
-		      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		    </li>
-		    <li class="nav-item">
-		      <a class="nav-link" href="#">Portfolio</a>
-		    </li>
-		    <li class="nav-item">
-		      <a class="nav-link" href="#">Blog</a>
-		    </li>
-		   </ul>
-		</span>
-	</nav> -->
-	<h1 class="hidden-xl-down"> Allwin Williams's Personal Website</h1>
-	<section id="header">
-		<div id="header-blue" class="bg-blue"></div>
-		<div class="header-inner">
-			<div class="container">
-				<div class="row header-content">
-					<div class="col-md-6 push-md-6">
-						<div class="header-text color-white">
-							<h1>Hi there,</h1>
-							<h1>I'm Allwin.</h1>
-
-							<p class="lead hidden-sm-down">
-								<br>
-								I am a student pursuing my master's degree in Interaction Design from National Institute of Design, Bengaluru after graduating in Information Technology from Coimbatore Institute of Technology, Coimbatore, India.
-							</p>
-						</div>
-
-					</div>
-					<div class="col-md-6 pull-md-6 text-center">
-						<div class="col-md-12 col-sm-12 col-xs-12 banner-img-div">
-							<div class="col-md-2 col-sm-2 col-xs-1"></div>
-							<img class="col-md-8 col-sm-8 col-xs-10" src="./img/banner.png">
-						</div>
-						<!-- <div class="header-img"></div> -->
-					</div>
+---
+layout: default
+title: "Allwin's website"
+my_name: "Allwin Williams"
+skills: "design, code and something?"
+---
+<section id="banner" class="bg-green py-5">
+	<div class="container">
+		<div class="row white">
+			<div class="col-8 align-middle my-5">
+				<div class="font-weight-light">Hi there,</div>
+				<h1>I'm <strong>{{ page.my_name }}</strong>.</h1>
+				<div class="">I {{ page.skills }}.</div>
+			</div>
+			<div class="col-4">
+				<div class="px-1 noparallax">
+					<img class="w-25" src="/assets/images/banner.png" alt="Illustration of myself" />
 				</div>
 			</div>
-		</div>
-	</section>
-	<section id="myself" class="bg-white">
-		<div class="text-center color-black">
-			<p class="lead hidden-md-up">
-				I am a student pursuing my master's degree in Interaction Design from National Institute of Design, Bengaluru after graduating in Information Technology from Coimbatore Institute of Technology, Coimbatore, India.
-			</p>
-		</div>
-		<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="color-blue">
-							<h1>
-								Myself,
-							</h1>
-							<p class="lead color-black">
-								Fulltime <b>Student</b>, Classtime <b>Dreamer</b>, Freetime <b>Reader</b>, Funtime <b>Designer</b>, Alltime <b>Learner</b>.<br><br>
-								Inquisitive <b>Worker</b>, Creative <b>Thinker</b>.
-								<br><br>
-								Code Love, Design Passion, Music Life.
-							</p>
-						</div>bac
-					</div>
-					<div class="col-md-6">
-						<!-- <div class="myself-img hidden-sm-down"></div> -->
-						<img src="./img/myself.png" class="col-md-10 offset-md-1 hidden-sm-down">
-					</div>
-				</div>
-			</div>
-	</section>
-	<section id="interests" class="bg-white text-center">
-		<div class="container">
-
-			<div class="color-blue">
-				<h1>
-					Interests
-				</h1>
-				<p class="lead color-black hidden-sm-down">
-					<b>Tech</b>, <b>Design</b> and <b>Music</b>
-				</p>
-			</div>
-			<div class="row">
-				<div class="col-md-1"></div>
-				<div class="col-md-10">
-					<div class="row">
-						<div class="col-md-4 m-0-a">
-							<img src="./img/tech.png" class="col-md-12 col-sm-12 col-xs-12  m-0-a interest-icon  ">
-							<div class="hidden-md-up col-sm-12 col-xs-12"><h4><b>Tech</b></h4></div>
-						</div>
-						<div class="col-md-4 m-0-a">
-							<img src="./img/design.png" class="col-md-12 col-sm-12 col-xs-12  m-0-a interest-icon  ">
-							<div class="hidden-md-up col-sm-12 col-xs-12"><h4><b>Design</b></h4></div>
-						</div>
-						<div class="col-md-4 m-0-a">
-							<img src="./img/music.png" class="col-md-12 col-sm-12 col-xs-12  m-0-a interest-icon ">
-							<div class="hidden-md-up col-sm-12 col-xs-12"><h4><b>Music</b></h4></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-1"></div>
-			</div>
-		</div>
-	</section>
-	<!-- <section id="moments" class="bg-grey text-center color-blue">
-		<div class="aw-container">
-
-			<div class="color-black">
-				<h1>
-					Moments of Life
-				</h1>
-			</div>
-
-			<div class="row text-center">
-				The rememberable moments of my life...
-			</div>
-		</div>
-	</section> -->
-	<section id="stay-connected" class="bg-white text-center container">
-		<div class="aw-container">
-
-			<div class="color-black">
-				<h1>
-					Stay Connected
-				</h1>
-			</div>
-
-			<div class="row text-center social-links">
-				<div class="col-md-2 col-sm-4  col-xs-6">
-					<a href="https://twitter.com/allwinwilliams" target="_blank" style="color: #55acee;"><b>Twitter</b></a>
-				</div>
-				<div class="col-md-2  col-sm-4  col-xs-6">
-					<a href="https://github.com/allwinwilliams/" target="_blank" style="color: #000000;"><b>GitHub</b></a>
-				</div>
-				<div class="col-md-2  col-sm-4  col-xs-6">
-					<a href="https://www.behance.net/allwinwilliams" target="_blank" style="color: #0058ff;"><b>Behance</b></a>
-				</div>
-				<div class="col-md-2  col-sm-4  col-xs-6">
-					<a href="https://dribbble.com/allwin" target="_blank" style="color: #ea4c89;"><b>Dribbble</b></a>
-				</div>
-				<div class="col-md-2  col-sm-4  col-xs-6">
-					<a href="https://codepen.io/allwinwilliams/" target="_blank" style="color: #000000;"><b>CodePen</b></a>
-				</div>
-				<div class="col-md-2  col-sm-4  col-xs-6">
-					<a href="https://www.linkedin.com/in/allwin-williams" target="_blank" style="color: #007bb5;"><b>LinkedIn</b></a>
-				</div>
-			</div>
-			<div>
-				<a href="mailto:iam@allwinwilliams.com" target="_blank" class="color-black">
-					<h5 class="mail-id">iam@allwinwilliams.com</h5>
-				</a>
-			</div>
-		</div>
-	</section>
-	<div class="display-sm-down">
-		<div class="container">
-			<!-- <div class="myself-img hidden-md-up"></div> -->
-			<img src="./img/myself.png" class="col-sm-12 col-xs-12 hidden-md-up">
 		</div>
 	</div>
-	<footer class="footer bg-grey">
-      <div class="container">
-        <span class="text-muted">© Allwin Williams 2019</span>
-        <span class=" float-right text-muted" >
-        	<a href="#">Back to Top</a>
-        </span>
-      </div>
-    </footer>
+</section>
 
-	<!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script> -->
-   	<!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script> -->
+<section id="myself" class="bg-light-green py-5">
+	<div class="container text-center">
+		<div class="section-title green">
+			<h2>Myself</h2>
+		</div>
+		<div class="section-content railway blue-grey py-5">
+			<div>
+				Full-time <b>Student</b>,
+				Class-time <b>Dreamer</b>,
+				Free-time <b>Reader</b>,
+				Part-time <b>Coder</b>,
+				Any-time <b>Designer</b>,
+				All-time <b>Learner</b>.
+			</div>
+			<div class="mt-4">
+				Inquisitive <b>Worker</b>,
+				Creative <b>Thinker</b>,
+				Problem <b>Solver</b>.
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="brief" class="bg-white">
+	<div class="container text-right">
+		<div class="section-title green">
+			<h2>A brief history of me</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-8 offset-md-4 col-12 section-content railway blue-grey py-5">
+				<div>
+					I’m from Tiruchirappalli, Tamil Nadu and got my Bachelor of Technology degree in Information Technology from Coimbatore Institute of Technology, Coimbatore,  Tamil Nadu. Currently I’m pursing my master’s degree in Interaction Design from
+					National Institute of Design, Bengaluru, Karnataka.
+				</div>
+				<div class="mt-4">
+					I love to watch crime thrillers and like to play piano in my free time.
+				</div>
+			</div>
+		<div>
+</section>
 
 
-</body>
-</html>
+<section id="projects" class="bg-dark-grey py-5">
+	<div class="container text-center w-sm-50 py-5">
+		<div class="section-title blue-grey mb-5">
+			<h2>Projects<h2>
+		</div>
+		<div class="row mx-auto">
+			{% for item in site.data.projects %}
+					<div class="col-12 col-md-6 my-3">
+						<a href="{{item.link}}">
+							<div class="p-5 bg-blue-grey-light">
+								<div class="white">
+									<h5>{{item.title}}</h5>
+								</div>
+								<div class="blue-grey">
+									<em>{{item.description}}</em>
+								</div>
+							</div>
+						</a>
+					</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section class="bg-white py-5">
+	<div class="container text-center w-sm-50 my-5">
+		<div class="section-title green">
+			<h2>Skills<h2>
+		</div>
+		<div class="row mx-auto blue-grey">
+			{% for skill in site.data.skills %}
+				<div class="col-6 mt-5">
+					{{skill.name}}
+				</div>
+			{% endfor %}
+
+		</div>
+	</div>
+</section>
+
+<section id="tools" class="bg-white py-5">
+	<div class="container text-center w-sm-50 my-5">
+		<div class="section-title green">
+			<h2>Tools & Technology<h2>
+		</div>
+		<div class="w-50 mx-auto">
+			{% for type in site.data.tools %}
+				<div class="section-subtitle blue-grey font-weight-500 mt-5">
+					{{ type.name | upcase}}
+				</div>
+				<div class="mx-auto blue-grey py-5 railway inline">
+					{% for item in type.items %}
+						<div class="d-inline tool text-nowrap">{{item.name}}</div>
+					{% endfor %}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+
+<section class="bg-dark-grey py-5">
+	<div class="container text-center">
+		<div class="section-title green mt-5">
+			<h2>Contact me</h2>
+		</div>
+		<div class="section-content railway white py-5">
+			<div class="mb-4">
+				<h3><i class="fas fa-mobile-alt"></i></h3>
+				<div>
+					<a>+91 87549 68346</a>
+				</div>
+			</div>
+			<div class="mb-4">
+				<h3><i class="far fa-envelope"></i></h3>
+				<div>
+					<a>iam@allwinwilliams.com</a>
+				</div>
+			</div>
+	</div>
+</section>

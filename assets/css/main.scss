@@ -1,0 +1,52 @@
+---
+---
+@import "colors";
+@import "styles";
+
+body{
+  @extend .primry-font;
+}
+
+.section-title{
+  // @extend h2;
+  //
+  h2{
+    @extend .font-weight-400;
+  }
+}
+
+.section-content{
+  @extend .secondary-font;
+}
+
+#projects a:hover{
+  text-decoration: none;
+}
+
+#banner, #myself, #brief{
+  padding-top: 12em !important;
+  padding-bottom: 12em !important;
+}
+
+#banner{
+  background: rgb(85,191,89);
+  background: linear-gradient(135deg, rgba(85,191,89,1) 0%, rgba(41,136,45,1) 100%);
+}
+
+.parallax{
+  img{
+    position: fixed;
+  }
+}
+
+#tools{
+  .tool:not(:last-child)::after{
+    content: url('/assets/images/dot.svg');
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+#myself{
+  box-shadow: 0px 0px 15px 0px #666666;
+}
