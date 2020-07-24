@@ -6,16 +6,37 @@ skills: "design, code and something?"
 ---
 
 
-<section id="banner" class="bg-green py-4">
-	<div class="container">
+
+<header id="banner" class="bg-green">
+	<div class="container pt-5">
+		<nav class="navbar navbar-expand-lg navbar-light bg-transparent p-0">
+			<a class="navbar-brand" href="#">
+				<img src="/assets/images/logo-white.svg" width="30" height="30" alt="">
+			</a>
+
+			<div class="ml-auto" id="">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item mx-3">
+						<a class="cursor-pointer nav-link white font-weight-300" onclick="scrollToProjects();">Projects</a>
+					</li>
+					<li class="nav-item ml-3">
+						<a class="cursor-pointer nav-link white font-weight-300" onclick="scrollToContact();">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container content">
+
 		<div class="align-middle row white">
 			<div class="col-8 py-3 my-auto">
 				<div class="font-weight-light">Hi there,</div>
 				<h1>I'm <strong>{{ page.my_name }}</strong>.</h1>
 				<div class="">I {{ page.skills }}.</div>
 			</div>
-			<div class="col-4">
-				<div class="noposition-fixed">
+			<div class="col-4 banner-img">
+				<div class="w-100">
 					<!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In  -->
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="367.1px"
 						 height="504.6px" viewBox="0 0 367.1 504.6" style="overflow:visible;enable-background:new 0 0 367.1 504.6;"
@@ -46,7 +67,7 @@ skills: "design, code and something?"
 			</div>
 		</div>
 	</div>
-</section>
+</header>
 
 <script>
 // Get the id of the <path> element and the length of <path>
@@ -72,111 +93,117 @@ skills: "design, code and something?"
 	}
 </script>
 
-
-<section id="myself" class="bg-light-green py-5">
-	<div class="container text-center">
-		<div class="section-title green">
-			<h2>Myself</h2>
-		</div>
-		<div class="section-content railway blue-grey py-5">
-			<div>
-				Full-time <b>Student</b>,
-				Class-time <b>Dreamer</b>,
-				Free-time <b>Reader</b>,
-				Part-time <b>Coder</b>,
-				Any-time <b>Designer</b>,
-				All-time <b>Learner</b>.
+<main>
+	<section id="myself" class="bg-light-green py-5">
+		<div class="container text-center">
+			<div class="section-title green">
+				<h2>Myself</h2>
 			</div>
-			<div class="mt-4">
-				Inquisitive <b>Worker</b>,
-				Creative <b>Thinker</b>,
-				Problem <b>Solver</b>.
-			</div>
-		</div>
-	</div>
-</section>
-
-<section id="brief" class="bg-white">
-	<div class="container text-right">
-		<div class="section-title green">
-			<h2>A brief history of me</h2>
-		</div>
-		<div class="row">
-			<div class="col-md-8 offset-md-4 col-12 section-content railway blue-grey py-5">
+			<div class="section-content railway blue-grey py-5">
 				<div>
-					I’m from Tiruchirappalli, Tamil Nadu and got my Bachelor of Technology degree in Information Technology from Coimbatore Institute of Technology, Coimbatore,  Tamil Nadu. Currently I’m pursing my master’s degree in Interaction Design from
-					National Institute of Design, Bengaluru, Karnataka.
+					Full-time <b>Student</b>,
+					Class-time <b>Dreamer</b>,
+					Free-time <b>Reader</b>,
+					Part-time <b>Coder</b>,
+					Any-time <b>Designer</b>,
+					All-time <b>Learner</b>.
 				</div>
 				<div class="mt-4">
-					I love to watch crime thrillers and like to play piano in my free time.
+					Inquisitive <b>Worker</b>,
+					Creative <b>Thinker</b>,
+					Problem <b>Solver</b>.
 				</div>
 			</div>
-		<div>
-</section>
-
-
-<section id="projects" class="bg-dark-grey py-5">
-	<div class="container text-center w-sm-50 py-5">
-		<div class="section-title blue-grey mb-5">
-			<h2>Projects<h2>
 		</div>
-		<div class="row mx-auto projects-container">
-			{% for item in site.data.projects %}
-					<div class="col-12 col-md-6 my-3 project">
-						<a href="{{item.link}}">
-							<div class="p-5 bg-blue-grey-light">
-								<div class="white project-title">
-									<h5>{{item.title}}</h5>
-								</div>
-								<div class="blue-grey project-description">
-									<em>{{item.description}}</em>
-								</div>
-							</div>
-						</a>
+	</section>
+
+	<section id="brief" class="bg-white">
+		<div class="container text-right">
+			<div class="section-title green">
+				<h2>A brief history of me</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-8 offset-md-4 col-12 section-content railway blue-grey py-5">
+					<div>
+						I’m from Tiruchirappalli, Tamil Nadu and got my Bachelor of Technology degree in Information Technology from Coimbatore Institute of Technology, Coimbatore,  Tamil Nadu. Currently I’m pursing my master’s degree in Interaction Design from
+						National Institute of Design, Bengaluru, Karnataka.
 					</div>
-			{% endfor %}
-		</div>
-	</div>
-</section>
-
-<section class="bg-white py-5">
-	<div class="container text-center w-sm-50 my-5">
-		<div class="section-title green">
-			<h2>Skills<h2>
-		</div>
-		<div class="row mx-auto blue-grey">
-			{% for skill in site.data.skills %}
-				<div class="col-6 mt-5">
-					{{skill.name}}
+					<div class="mt-4">
+						I love to watch crime thrillers and like to play piano in my free time.
+					</div>
 				</div>
-			{% endfor %}
+			<div>
+	</section>
 
+
+	<section id="projects" class="bg-dark-grey py-5">
+		<div class="container text-center w-sm-50 py-5">
+			<div class="section-title blue-grey mb-5">
+				<h2>Projects<h2>
+			</div>
+			<div class="row mx-auto projects-container">
+				{% for item in site.data.projects %}
+						<div class="col-12 col-md-6 my-3 project">
+							<a href="{{item.link}}">
+								<div class="p-5 bg-blue-grey-light">
+									<div class="white project-title">
+										<h5>{{item.title}}</h5>
+									</div>
+									<div class="blue-grey project-description">
+										<em>{{item.description}}</em>
+									</div>
+								</div>
+							</a>
+						</div>
+				{% endfor %}
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-<section id="tools" class="bg-white py-5">
-	<div class="container text-center w-sm-50 my-5">
-		<div class="section-title green">
-			<h2>Tools & Technology<h2>
+	<section class="bg-white py-5">
+		<div class="container text-center w-sm-50 my-5">
+			<div class="section-title green">
+				<h2>Skills<h2>
+			</div>
+			<div class="row mx-auto blue-grey">
+				{% for skill in site.data.skills %}
+					<div class="col-6 mt-5">
+						{{skill.name}}
+					</div>
+				{% endfor %}
+
+			</div>
 		</div>
-		<div class="w-50 mx-auto">
-			{% for type in site.data.tools %}
-				<div class="section-subtitle blue-grey font-weight-500 mt-5">
-					{{ type.name | upcase}}
-				</div>
-				<div class="mx-auto blue-grey py-5 railway inline">
-					{% for item in type.items %}
-						<div class="d-inline tool text-nowrap">{{item.name}}</div>
-					{% endfor %}
-				</div>
-			{% endfor %}
+	</section>
+
+	<section id="tools" class="bg-white py-5">
+		<div class="container text-center w-sm-50 my-5">
+			<div class="section-title green">
+				<h2>Tools & Technology<h2>
+			</div>
+			<div class="w-50 mx-auto">
+				{% for type in site.data.tools %}
+					<div class="section-subtitle blue-grey font-weight-500 mt-5">
+						{{ type.name | upcase}}
+					</div>
+					<div class="mx-auto blue-grey py-5 railway inline">
+						{% for item in type.items %}
+							<div class="d-inline tool text-nowrap">{{item.name}}</div>
+						{% endfor %}
+					</div>
+				{% endfor %}
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
 
-<section class="bg-dark-grey py-5">
+<footer id="contact" class="bg-dark-grey py-5">
+	<span class="px-5 float-right mx-auto text-center">
+		<a class="cursor-pointer blue-grey" onclick="scrollToBanner();">
+				<h2 class=""><i class="fa fa-chevron-circle-up blue-grey"></i></h2>
+				<p class="blue-grey font-weight-300">Top</p>
+		</a>
+	</span>
 	<div class="container text-center">
 		<div class="section-title green mt-5">
 			<h2>Contact me</h2>
@@ -195,4 +222,28 @@ skills: "design, code and something?"
 				</div>
 			</div>
 	</div>
-</section>
+
+</footer>
+<div class="w-100 py-4 text-center bg-dark-grey nobg-blue-grey-light">
+	<div class="container blue-grey">
+		Made with &#x2764; by Allwin.
+	</div>
+</div>
+
+<script>
+function scrollToProjects(){
+	scrollTo("#projects");
+}
+function scrollToContact(){
+	scrollTo("#contact");
+}
+function scrollToBanner(){
+	scrollTo("#banner");
+}
+function scrollTo(section){
+	document.querySelector(section).scrollIntoView({
+		behavior: 'smooth'
+	});
+}
+
+</script>
