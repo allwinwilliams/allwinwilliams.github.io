@@ -1,0 +1,18 @@
+- name: design
+  items:
+    - name: Adobe XD
+    - name: Adobe Illustrator
+    - name: Adobe Premier Pro
+    - name: Processing
+    - name: Logic Pro X
+
+- name: developement
+  items:
+    - name: HTML
+    - name: CSS
+    - name: Javascript
+    - name: ES6
+    - name: JQuery
+    - name: Ruby on Rails
+    - name: Python
+    - name: React JS
