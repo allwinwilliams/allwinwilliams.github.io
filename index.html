@@ -2,7 +2,7 @@
 layout: default
 title: "Allwin's website"
 my_name: "Allwin Williams"
-skills: "design, code and something?"
+skills: "design, code and live somewhere inbetween"
 ---
 
 
@@ -13,36 +13,40 @@ skills: "design, code and something?"
 			<a class="navbar-brand" href="#">
 				<img src="/assets/images/logo-white.svg" width="30" height="30" alt="">
 			</a>
+			<ul class="navbar-nav list-inline ml-auto d-block">
+				<li class="nav-item mx-3 list-inline-item">
+					<a class="cursor-pointer nav-link white font-weight-300" onclick="scrollToProjects();">Projects</a>
+				</li>
+				<li class="nav-item ml-3 list-inline-item">
+					<a class="cursor-pointer nav-link white font-weight-300" onclick="scrollToContact();">Contact</a>
+				</li>
+			</ul>
 
-			<div class="ml-auto" id="">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item mx-3">
-						<a class="cursor-pointer nav-link white font-weight-300" onclick="scrollToProjects();">Projects</a>
-					</li>
-					<li class="nav-item ml-3">
-						<a class="cursor-pointer nav-link white font-weight-300" onclick="scrollToContact();">Contact</a>
-					</li>
-				</ul>
-			</div>
 		</nav>
 	</div>
 
 	<div class="container content">
 
-		<div class="align-middle row white">
-			<div class="col-8 py-3 my-auto">
-				<div class="font-weight-light">Hi there,</div>
-				<h1>I'm <strong>{{ page.my_name }}</strong>.</h1>
-				<div class="">I {{ page.skills }}.</div>
+		<div class="row white">
+			<div class="align-middle col-8 py-3 my-auto">
+				<div class="">
+					<h5 class="font-weight-light">Hi there,</h5>
+				</div>
+				<h1 class="font-weight-300" style="font-family: 'Amatic SC', cursive;">
+					I'm <strong >{{ page.my_name }}</strong>.
+				</h1>
+				<div class="">
+					<h5 class="font-weight-light">I {{ page.skills }}.</h5>
+				</div>
 			</div>
-			<div class="col-4 banner-img">
+			<div class="align-bottom col-4 banner-img">
 				<div class="w-100">
 					<!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In  -->
-					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="367.1px"
+					<svg class="w-75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="367.1px"
 						 height="504.6px" viewBox="0 0 367.1 504.6" style="overflow:visible;enable-background:new 0 0 367.1 504.6;"
 						 xml:space="preserve">
 					<style type="text/css">
-						.st0{opacity:0.5;fill:none;stroke:#ffffff;stroke-miterlimit:10;}
+						.st0{stroke-width:3;opacity:0.5;fill:none;stroke:#ffffff;stroke-miterlimit:10;}
 					</style>
 					<defs>
 					</defs>
@@ -79,17 +83,18 @@ skills: "design, code and something?"
 
 	window.addEventListener("scroll", bannerScroll);
 
+	console.log("rocket.style.strokeDashoffset");
+	console.log(rocket.style.strokeDashoffset);
 
 	function bannerScroll() {
-	var scrollpercent = (document.documentElement.scrollTop)/500;
+		var scrollpercent = (document.documentElement.scrollTop)/500;
 
-  var draw = length * scrollpercent;
+	  var draw = length * scrollpercent;
 
-	console.log("draw");
-	console.log(draw);
+		console.log("draw");
+		console.log(draw);
 
-  rocket.style.strokeDashoffset = length - draw;
-
+	  rocket.style.strokeDashoffset = length - draw;
 	}
 </script>
 
@@ -136,7 +141,7 @@ skills: "design, code and something?"
 	</section>
 
 
-	<section id="projects" class="bg-dark-grey py-5">
+	<section id="projects" class="nbg-dark-grey py-5">
 		<div class="container text-center w-sm-50 py-5">
 			<div class="section-title blue-grey mb-5">
 				<h2>Projects<h2>
@@ -200,33 +205,39 @@ skills: "design, code and something?"
 <footer id="contact" class="bg-dark-grey py-5">
 	<span class="px-5 float-right mx-auto text-center">
 		<a class="cursor-pointer blue-grey" onclick="scrollToBanner();">
-				<h2 class=""><i class="fa fa-chevron-circle-up blue-grey"></i></h2>
-				<p class="blue-grey font-weight-300">Top</p>
+				<h2 class="">
+					<i class="fa fa-chevron-circle-up blue-grey"></i>
+				</h2>
+				<p class="blue-grey font-weight-300">Go to top</p>
 		</a>
 	</span>
 	<div class="container text-center">
 		<div class="section-title green mt-5">
 			<h2>Contact me</h2>
 		</div>
-		<div class="section-content railway white py-5">
+		<div class="section-content py-5">
 			<div class="mb-4">
-				<h3><i class="fas fa-mobile-alt"></i></h3>
+				<h3><i class="fa fa-mobile-alt"></i></h3>
 				<div>
-					<a>+91 87549 68346</a>
+					<a href="tel:+918754968346" class="railway white ">+91 87549 68346</a>
 				</div>
 			</div>
 			<div class="mb-4">
-				<h3><i class="far fa-envelope"></i></h3>
+				<h3><i class="fa fa-envelope"></i></h3>
 				<div>
-					<a>iam@allwinwilliams.com</a>
+					<a href="mailto:iam@allwinwilliams.com" class="railway white">iam@allwinwilliams.com</a>
 				</div>
 			</div>
 	</div>
 
 </footer>
-<div class="w-100 py-4 text-center bg-dark-grey nobg-blue-grey-light">
-	<div class="container blue-grey">
-		Made with &#x2764; by Allwin.
+<div class="w-100 text-center bg-dark-grey nobg-blue-grey-light">
+	<div class="container blue-grey py-4">
+		Made with <strong style="color:#f15261;">&#x2764;</strong> by Allwin.
+	</div>
+	<hr class="m-0" />
+	<div class="nobg-blue-grey-light py-2">
+		&copy; 2020 Allwin Williams.
 	</div>
 </div>
 
