@@ -124,3 +124,9 @@ main{
   background: linear-gradient(135deg, $dark-grey 0%, #253036 100%);
   // position: fixed;
 }
+
+footer{
+  .contact-link:hover{
+    text-decoration: none;
+  }
+}

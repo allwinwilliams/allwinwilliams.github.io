@@ -1,19 +1,19 @@
-- title: Evaluation portal for faculties
-  description: Redesigning the interface
-  link: /
-
-- title: A study on GMO food
-  description: Labelling GMO foods to keep the consumers informed
-  link: /
-
-- title: Research on inter-organisational communication channels
-  description: Labelling GMO foods to keep customers informed
-  link: /
-
-- title: Collaboration in music production
-  description: Improving workflow when stakeholders are in remote locations
-  link: /
+# - title: Evaluation portal for faculties
+#   description: Redesigning the interface
+#   link: /
 
 - title: The sounds of my action
   description: Making music from the movement of hands
-  link: /
+  link: "https://medium.com/@allwinwilliams/the-sounds-of-my-action-an-interaction-design-project-902f7ce5e413"
+
+- title: Collaboration in music production
+  description: Improving workflow when stakeholders are in remote locations
+  link: "https://medium.com/students-nidblr/collaboration-in-music-production-a-design-research-analysis-case-study-ccb93de0c9bb"
+
+- title: Research on inter-organisational communication channels
+  description: Labelling GMO foods to keep customers informed
+  link: "https://www.behance.net/gallery/98677933/Communication-channels-used-in-organisations"
+
+- title: A study on GMO food
+  description: Labelling GMO foods to keep the consumers informed
+  link: "https://www.behance.net/gallery/98677575/A-design-project-on-Genetically-modified-foods"
