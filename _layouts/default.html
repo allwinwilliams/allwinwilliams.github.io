@@ -230,10 +230,19 @@
     	<div class="container text-center">
         <div class="row m-0">
       		<div class="section-title green mt-5 text-center mx-auto">
-      			<h2>Contact me</h2>
+      			<h2>Let's connect</h2>
       		</div>
         </div>
     		<div class="section-content py-5">
+          <div class="mb-5">
+            {% for item in site.data.socials %}
+              <div class="mx-3 d-inline">
+                <a href="{{item.link}}" target="_blank">
+                  <h2 class="white d-inline"><i class="fab {{item.fa-icon}}"></i></h2>
+                </a>
+              </div>
+            {% endfor %}
+          </div>
     			<div class="mb-4">
     				<h3><i class="fa fa-mobile-alt white"></i></h3>
     				<div>
