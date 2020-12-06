@@ -1,6 +1,6 @@
 - name: LinkedIn
   link: https://www.linkedin.com/in/allwinwilliams/
-  fa-icon: fa-instagram
+  fa-icon: fa-linkedin-in
 
 - name: Github
   link: https://github.com/allwinwilliams
@@ -8,7 +8,7 @@
 
 - name: Instagram
   link: https://www.instagram.com/allwin_williams/
-  fa-icon: fa-linkedin-in
+  fa-icon: fa-instagram
 
 - name: Behance
   link: https://www.behance.net/allwinwilliams
