@@ -51,7 +51,7 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rouge (3.25.0)
+    rouge (3.26.0)
     safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -66,7 +66,7 @@ GEM
     wdm (0.1.1)
 
 PLATFORMS
-  ruby
+  universal-darwin-20
 
 DEPENDENCIES
   jekyll (~> 3.8.7)
@@ -77,4 +77,4 @@ DEPENDENCIES
   wdm (~> 0.1.0)
 
 BUNDLED WITH
-   2.1.4
+   2.2.1
