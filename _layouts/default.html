@@ -38,17 +38,16 @@
     				<img src="/assets/images/logo-white.svg" width="30" height="30" alt="">
     			</a>
     			<ul class="navbar-nav list-inline ml-auto d-block">
-    				<li class="nav-item mx-3 list-inline-item">
-    					<a class="cursor-pointer nav-link white font-weight-300" onclick="scrollToProjects();">Projects</a>
+            <li class="nav-item mx-3 list-inline-item">
+    					<a class="cursor-pointer nav-link white font-weight-300" href="#projects">Projects</a>
     				</li>
             <li class="nav-item mx-3 list-inline-item">
     					<a class="cursor-pointer nav-link white font-weight-300" href="{{ 'assets/pdf/resume.pdf' | relative_url }}" target="_blank">Resume</a>
     				</li>
     				<li class="nav-item ml-3 list-inline-item">
-    					<a class="cursor-pointer nav-link white font-weight-300" onclick="scrollToContact();">Contact</a>
+    					<a class="cursor-pointer nav-link white font-weight-300" href="#contact">Contact</a>
     				</li>
     			</ul>
-
     		</nav>
     	</div>
 
@@ -175,7 +174,11 @@
     			<div class="row mx-auto projects-container">
     				{% for item in site.data.projects %}
     						<div class="col-12 col-md-6 my-3 project">
-    							<a href={{item.link}} target="_blank">
+    							<a href={{item.link}}
+                    {% if item.link_type == "external" %}
+                      target="_blank"
+                    {% endif %}
+                  >
     								<div class="p-5 bg-blue-grey-light">
     									<div class="white project-title">
     										<h5>{{item.title}}</h5>
@@ -261,7 +264,7 @@
           </div>
     	</div>
       <div class="px-2 px-md-5 text-center">
-    		<a class="cursor-pointer blue-grey" onclick="scrollToBanner();">
+    		<a class="cursor-pointer blue-grey" href="#">
     				<h6 class="">
     					<i class="fa fa-chevron-circle-up blue-grey"></i>
     				</h6>

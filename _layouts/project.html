@@ -1,24 +1,125 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>{{ page.title }} | {{ site.title }}</title>
+    <title>Allwin Williams | Designer</title>
 
     <meta name="description" content="Allwin Williams | Digital experience designer" />
-		<meta name="author" content="Allwin Williams" />
-	  <meta name="keywords" content="allwin, williams, samuvel, samuel, it, soimbatore, trichy, lalgudi, india, nid, bangalore, bengaluru, interaction design, ux, experience design, design portfolio, portfolio website, portfolio" />
-		<meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	  <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="author" content="Allwin Williams" />
+    <meta name="keywords" content="allwin, williams, samuvel, samuel, it, soimbatore, trichy, lalgudi, india, nid, bangalore, bengaluru, interaction design, ux, experience design, design portfolio, portfolio website, portfolio" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16">
-		<link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400&family=Raleway&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/project.css">
+    <link rel="icon" type="image/png" href="{{ 'assets/images/favicon.png' | relative_url }}" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,300;1,400&family=Raleway&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/css/main.css' | relative_url }}" />
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/css/product.css' | relative_url }}" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3W98MEFVZ4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3W98MEFVZ4');
+    </script>
     <script src="https://kit.fontawesome.com/f281a292f4.js" crossorigin="anonymous"></script>
   </head>
+  <script>
+    function back(){
+      window.history.back();
+    }
+  </script>
   <body>
-    {{ content }}
+    <header>
+    	<div class="container pt-5">
+    		<nav class="navbar navbar-expand-lg navbar-light bg-transparent p-0">
+    			<a class="navbar-brand" href="/">
+    				<img src="/assets/images/logo.svg" width="30" height="30" alt="">
+            <p class="d-inline">Allwin Williams</p>
+    			</a>
+    			<ul class="navbar-nav list-inline ml-auto d-block">
+    				<li class="nav-item mx-3 list-inline-item">
+    					<a class="cursor-pointer nav-link font-weight-300" href="/#projects">Projects</a>
+    				</li>
+            <li class="nav-item mx-3 list-inline-item">
+    					<a class="cursor-pointer nav-link font-weight-300" href="{{ 'assets/pdf/resume.pdf' | relative_url }}" target="_blank">Resume</a>
+    				</li>
+    				<li class="nav-item ml-3 list-inline-item">
+    					<a class="cursor-pointer nav-link font-weight-300" href="/#contact">Contact</a>
+    				</li>
+    			</ul>
+    		</nav>
+    	</div>
+      <div class="container back-to-home mt-5 mb-0">
+        <a class="raleway grey cursor-pointer" onclick="back()">
+          <i class="fas fa-chevron-left"></i>
+          <p class="d-inline">BACK</p>
+        </a>
+      </div>
+      <div class="container mt-2 mb-5 project-info">
+        <h1 class="primary-color">{{ page.title }}</h1>
+        <p class="railway blue-grey">{{ page.description }}</p>
+      </div>
+    </header>
+    <div class="my-5">
+      {{ content }}
+    </div>
+    <footer id="contact" class="bg-dark-grey py-5">
+    	<div class="container text-center">
+        <div class="row m-0">
+      		<div class="section-title green mt-5 text-center mx-auto">
+      			<h2>Let's connect</h2>
+      		</div>
+        </div>
+    		<div id="social-links" class="section-content py-5">
+          <div class="py-3">
+            {% for item in site.data.socials %}
+              <div class="mx-3 d-inline">
+                <a href="{{item.link}}" target="_blank">
+                  <i class="white d-inline fab {{item.fa-icon}}"></i>
+                </a>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="my-5">
+            <div class="my-5">
+    					<a href="tel:+918754968346" class="contact-link white ">
+                <i class="fa fa-mobile-alt white"></i>
+                <div>+91 87549 68346</div>
+              </a>
+      			</div>
+      			<div class="my-5">
+    					<a href="mailto:iam@allwinwilliams.com" class="contact-link white">
+                <i class="fa fa-envelope white"></i>
+                <div>iam@allwinwilliams.com</div>
+              </a>
+      			</div>
+          </div>
+    	</div>
+      <div class="px-2 px-md-5 text-center">
+    		<a class="cursor-pointer blue-grey" href="#">
+    				<h6 class="">
+    					<i class="fa fa-chevron-circle-up blue-grey"></i>
+    				</h6>
+    				<p class="blue-grey font-weight-300">Go to top</p>
+    		</a>
+    	</div>
+      <div class="w-100 text-center bg-dark-grey">
+        <div class="container">
+        	<div class="blue-grey py-4">
+        		Made with <strong style="color:#f15261;">&#x2764;</strong> by Allwin.
+        	</div>
+        	<div class="blue-grey align-middle">
+        		Copyright &copy; 2020 Allwin Williams.
+        	</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
