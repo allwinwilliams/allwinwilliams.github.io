@@ -1,15 +1,19 @@
-- name: LinkedIn
-  link: https://www.linkedin.com/in/allwinwilliams/
-  fa-icon: fa-linkedin-in
+- name: Behance
+  link: https://www.behance.net/allwinwilliams
+  fa-icon: fa-behance
+
+- name: Soundcloud
+  link: https://soundcloud.com/allwinwilliams/sets/musicals-by-allwin
+  fa-icon: fa-soundcloud
 
 - name: Github
   link: https://github.com/allwinwilliams
   fa-icon: fa-github
 
+- name: LinkedIn
+  link: https://www.linkedin.com/in/allwinwilliams/
+  fa-icon: fa-linkedin-in
+
 - name: Instagram
   link: https://www.instagram.com/allwin_williams/
   fa-icon: fa-instagram
-
-- name: Behance
-  link: https://www.behance.net/allwinwilliams
-  fa-icon: fa-behance
