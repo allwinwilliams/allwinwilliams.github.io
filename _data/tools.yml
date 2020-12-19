@@ -10,7 +10,7 @@
   items:
     - name: HTML
     - name: CSS
-    - name: Javascript
+    - name: Jekyll
     - name: ES6
     - name: JQuery
     - name: Ruby on Rails
