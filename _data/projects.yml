@@ -47,6 +47,11 @@
   link: "/projects/integrated-thermal-scanning-hand-sanitizing"
   link_type: overlay
 
+- title: Farm status visualisation
+  description: Visualising to have an emotional connection
+  link: "/projects/farm-status-visualisation"
+  link_type: overlay
+
 
 # - title: my modal project
 #   description: Labelling GMO foods to keep the consumers informed
