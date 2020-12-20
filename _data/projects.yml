@@ -42,6 +42,11 @@
   link: "/projects/gmo-food-study"
   link_type: overlay
 
+- title: Integrating thermal scanning and hand sanitising
+  description: Imagining public spaces during COVID-19 times
+  link: "/projects/integrated-thermal-scanning-hand-sanitizing"
+  link_type: overlay
+
 
 # - title: my modal project
 #   description: Labelling GMO foods to keep the consumers informed
