@@ -31,7 +31,7 @@ $(document).ready(function() {
       if (isScrolledIntoView(this) === true) {
         $(this).css('opacity', '1');
         console.log("yessss");
-        $(this).addClass('animate__animated animate__fadeInUp');
+        $(this).addClass('animate__animated animate__bounceInUp');
 
       }
     });
