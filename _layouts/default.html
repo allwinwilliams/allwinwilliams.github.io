@@ -147,9 +147,6 @@
 
     	  var draw = length * scrollpercent;
 
-    		console.log("draw");
-    		console.log(draw);
-
     	  rocket.style.strokeDashoffset = draw;
     	}
     </script>
@@ -160,8 +157,8 @@
     			<div class="section-title green">
     				<h2>Myself</h2>
     			</div>
-    			<div class="section-content railway blue-grey py-5">
-    				<div>
+    			<div class="section-content railway blue-grey py-5 scroll-animations animated">
+    				<div class="">
     					Full-time <b>Designer</b>,
     					Part-time <b>Coder</b>,
               Free-time <b>Music producer</b>,
@@ -187,13 +184,15 @@
               <div class="section-title green">
         				<h2>A brief history of me</h2>
         			</div>
-    					<div>
-    						I’m from Tiruchirappalli, Tamil Nadu and got my Bachelor of Technology degree in Information Technology from Coimbatore Institute of Technology, Coimbatore,  Tamil Nadu. Currently I’m pursing my master’s degree in Interaction Design from
-    						National Institute of Design, Bengaluru, Karnataka.
-    					</div>
-    					<div class="mt-4">
-    						I love to watch crime thrillers and like to play piano in my free time.
-    					</div>
+              <div class="scroll-animations animated">
+      					<div class="">
+      						I’m from Tiruchirappalli, Tamil Nadu and got my Bachelor of Technology degree in Information Technology from Coimbatore Institute of Technology, Coimbatore,  Tamil Nadu. Currently I’m pursing my master’s degree in Interaction Design from
+      						National Institute of Design, Bengaluru, Karnataka.
+      					</div>
+      					<div class="mt-4">
+      						I love to watch crime thrillers and like to play piano in my free time.
+      					</div>
+              </div>
     				</div>
     			<div>
     	</section>
@@ -205,7 +204,7 @@
     			</div>
     			<div class="row mx-auto projects-container">
     				{% for item in site.data.projects %}
-    						<div class="col-12 col-md-6 my-3 project">
+    						<div class="col-12 col-md-6 my-3 project scroll-animations animated">
                   {% if item.link_type == "external" %}
       							<a href={{item.link}} target="_blank" class="external-project">
       								<div class="p-5 bg-blue-grey-light">
@@ -256,7 +255,7 @@
     			</div>
     			<div class="row mx-auto blue-grey">
     				{% for skill in site.data.skills %}
-    					<div class="col-6 mt-5">
+    					<div class="col-6 mt-5 scroll-animations animated">
     						{{skill.name}}
     					</div>
     				{% endfor %}
@@ -271,10 +270,10 @@
     			</div>
     			<div class="w-50 mx-auto">
     				{% for type in site.data.tools %}
-    					<div class="section-subtitle blue-grey font-weight-500 mt-5">
+    					<div class="section-subtitle blue-grey font-weight-500 mt-5 scroll-animations animated">
     						{{ type.name | upcase}}
     					</div>
-    					<div class="mx-auto blue-grey py-5 railway inline">
+    					<div class="mx-auto blue-grey py-5 railway inline scroll-animations animated">
     						{% for item in type.items %}
     							<div class="d-inline tool text-nowrap">{{item.name}}</div>
     						{% endfor %}
@@ -288,7 +287,7 @@
           <div class="section-title blue-grey my-5">
             <h2>I make music in my free time<h2>
           </div>
-          <div class="music-player-container w-90 mx-auto">
+          <div class="music-player-container w-90 mx-auto scroll-animations animated">
             <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/747682059&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
               <a href="https://soundcloud.com/allwinwilliams" title="Allwin Williams" target="_blank" style="color: #cccccc; text-decoration: none;">Allwin Williams</a> · <a href="https://soundcloud.com/allwinwilliams/sets/musicals-by-allwin" title="Musicals by Allwin" target="_blank" style="color: #cccccc; text-decoration: none;">Musicals by Allwin</a>
@@ -367,22 +366,6 @@
           </div>
         </div>
       </div>
-
-      <script>
-        function show_modal(url){
-          console.log("modal show");
-          console.log("url");
-
-          let modal_object = $('<object width="100%" height="100%" />');
-          modal_object.attr("data", url);
-          $('#modal-body-space').html(modal_object);
-          $('#projectModal').modal('show');
-        }
-        // function scrollTo(section){
-        // 	document.querySelector(section).scrollIntoView({
-        // 		behavior: 'smooth'
-        // 	});
-        // }
-      </script>
+      <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
   </body>
 </html>
