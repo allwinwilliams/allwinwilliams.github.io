@@ -10,10 +10,15 @@
   link: https://github.com/allwinwilliams
   fa-icon: fa-github
 
+# - name: Instagram
+#   link: https://www.instagram.com/allwin_williams/
+#   fa-icon: fa-instagram
+
+- name: Medium
+  link: https://medium.com/@allwinwilliams
+  fa-icon: fa-medium-m
+
 - name: LinkedIn
   link: https://www.linkedin.com/in/allwinwilliams/
   fa-icon: fa-linkedin-in
-
-- name: Instagram
-  link: https://www.instagram.com/allwin_williams/
-  fa-icon: fa-instagram
+# 
