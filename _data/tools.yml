@@ -13,6 +13,7 @@
     - name: Jekyll
     - name: ES6
     - name: JQuery
+    - name: p5.js
     - name: Ruby on Rails
     - name: Python
     - name: React JS
