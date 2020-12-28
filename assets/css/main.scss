@@ -17,6 +17,15 @@ html{
   // overflow-y: scroll;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 body{
   @extend .primary-font;
 }
@@ -107,14 +116,6 @@ main{
   }
 }
 
-#tools{
-  .tool:not(:last-child)::after{
-    content: url('/assets/images/dot.svg');
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-}
-
 #projects{
   background: $dark-grey;
   background: linear-gradient(135deg, $dark-grey 0%, #253036 100%);
@@ -159,12 +160,21 @@ a:hover{
 }
 
 .modal{
-  padding: 2em 2em;
+  padding: 0.5em 1.5em;
 }
-
+@media(min-width:768px){
+  #tools{
+    .tool:not(:last-child)::after{
+      content: url('/assets/images/dot.svg');
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+  }
+}
 @media(min-width:992px){
+
   .modal{
-    padding: 2em 12em;
+    padding: 1em 8em;
   }
   #music .music-player-container{
     width: 50% !important;
@@ -190,6 +200,9 @@ a:hover{
   height: 100vh;
 }
 
+#modal-body-space{
+  height: 95vh
+}
 
 .project-link{
   opacity: 0.8;

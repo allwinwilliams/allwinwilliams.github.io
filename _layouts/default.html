@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Allwin Williams | Designer</title>
+    <title>Allwin Williams | Digital experience designer</title>
 
     <meta name="description" content="Allwin Williams | Digital experience designer" />
 		<meta name="author" content="Allwin Williams" />
@@ -266,14 +266,14 @@
     			<div class="section-title green">
     				<h2>Tools & Technology<h2>
     			</div>
-    			<div class="w-50 mx-auto">
+    			<div class="w-50 mx-auto text-center">
     				{% for type in site.data.tools %}
     					<div class="section-subtitle blue-grey font-weight-500 mt-5">
     						{{ type.name | upcase}}
     					</div>
     					<div class="mx-auto blue-grey py-5 railway inline">
     						{% for item in type.items %}
-    							<div class="d-inline tool text-nowrap">{{item.name}}</div>
+    							<div class="d-md-inline tool text-nowrap">{{item.name}}</div>
     						{% endfor %}
     					</div>
     				{% endfor %}
