@@ -9,7 +9,9 @@
 
 - title: The sounds of my action
   description: Making music from the movement of hands
+  tags: Interactive Installation, Sound Design, Music
   link: "/projects/sounds-of-my-action"
+  image: "/projects/sounds-of-my-action/assets/images/card.png"
   link_type: overlay
 
 # - title: Collaboration in music production
@@ -19,7 +21,9 @@
 
 - title: Collaboration in music production
   description: Improving workflow when stakeholders are in remote locations
+  tags: System Design, UX, Mobile application
   link: "/projects/collaboration-in-music-production"
+  image: "/projects/collaboration-in-music-production/assets/images/card.png"
   link_type: overlay
 
 # - title: Research on inter-organisational communication channels
@@ -29,7 +33,9 @@
 
 - title: Research on inter-organisational communication channels
   description: Labelling GMO foods to keep customers informed
+  tags: User Research, Research and Analysis
   link: "/projects/inter-organisational-communication"
+  image: "/projects/inter-organisational-communication/assets/images/card.png"
   link_type: overlay
 
 # - title: A study on GMO food
@@ -39,17 +45,23 @@
 
 - title: A study on GMO food
   description: Labelling GMO foods to keep the consumers informed
+  tags: User Research, Research and Analysis
   link: "/projects/gmo-food-study"
+  image: "/projects/gmo-food-study/assets/images/card.png"
   link_type: overlay
 
 - title: Integrating thermal scanning and hand sanitising
   description: Imagining public spaces during COVID-19 times
+  tags: Multimodal product design, Tangible device
   link: "/projects/integrated-thermal-scanning-hand-sanitizing"
+  image: "/projects/integrated-thermal-scanning-hand-sanitizing/assets/images/card.png"
   link_type: overlay
 
 - title: Farm status visualisation
   description: Visualising to have an emotional connection
+  tags: Information design, Data visualisation
   link: "/projects/farm-status-visualisation"
+  image: "/projects/farm-status-visualisation/assets/images/card.png"
   link_type: overlay
 
 
