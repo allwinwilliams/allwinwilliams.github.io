@@ -176,11 +176,11 @@
     		<div class="container text-center text-md-left">
     			<div class="row">
             <div class="col-md-4 col-sm-6 col-12 text-center mx-auto">
-              <img class="w-100 px-5 align-middle" src="/assets/images/allwin-photo.png" />
+              <img class="w-100 px-5 px-sm-2 px-lg-5 align-middle" src="/assets/images/allwin-photo.png" />
             </div>
     				<div class="col-md-7 offset-md-1 col-12 section-content railway blue-grey py-5">
               <div class="section-title green">
-        				<h2>A brief history of me</h2>
+        				<h2 class="py-4">A brief history of me</h2>
         			</div>
               <div class="">
       					<div class="">
@@ -233,9 +233,10 @@
       									<div class="white project-title">
       										<h5>{{item.title}}</h5>
       									</div>
-      									<div class="blue-grey project-description">
-      										<em>{{item.description}}</em>
+      									<div class="blue-grey project-description mb-3">
+      										<h6><b>{{item.description}}</b></h6>
       									</div>
+                        <em class="blue-grey">{{item.tags}}</em>
       								</div>
       							</a>
                   {% endif %}
