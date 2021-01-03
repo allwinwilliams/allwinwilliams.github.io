@@ -31,24 +31,10 @@
 #   link: "https://www.behance.net/gallery/98677933/Communication-channels-used-in-organisations"
 #   link_type: external
 
-- title: Research on inter-organisational communication channels
-  description: Labelling GMO foods to keep customers informed
-  tags: User Research, Research and Analysis
-  link: "/projects/inter-organisational-communication"
-  image: "/projects/inter-organisational-communication/assets/images/card.png"
-  link_type: overlay
-
 # - title: A study on GMO food
 #   description: Labelling GMO foods to keep the consumers informed
 #   link: "https://www.behance.net/gallery/98677575/A-design-project-on-Genetically-modified-foods"
 #   link_type: external
-
-- title: A study on GMO food
-  description: Labelling GMO foods to keep the consumers informed
-  tags: User Research, Research and Analysis
-  link: "/projects/gmo-food-study"
-  image: "/projects/gmo-food-study/assets/images/card.png"
-  link_type: overlay
 
 - title: Integrating thermal scanning and hand sanitising
   description: Imagining public spaces during COVID-19 times
@@ -64,6 +50,19 @@
   image: "/projects/farm-status-visualisation/assets/images/card.png"
   link_type: overlay
 
+- title: A study on GMO food
+  description: Labelling GMO foods to keep the consumers informed
+  tags: User Research, Research and Analysis
+  link: "/projects/gmo-food-study"
+  image: "/projects/gmo-food-study/assets/images/card.png"
+  link_type: overlay
+
+- title: Research on inter-organisational communication channels
+  description: Labelling GMO foods to keep customers informed
+  tags: User Research, Research and Analysis
+  link: "/projects/inter-organisational-communication"
+  image: "/projects/inter-organisational-communication/assets/images/card.png"
+  link_type: overlay
 
 # - title: my modal project
 #   description: Labelling GMO foods to keep the consumers informed
