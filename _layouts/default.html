@@ -67,7 +67,7 @@
     					I'm <strong >Allwin Williams</strong>.
     				</h1>
     				<div class="">
-    					<h5 class="font-weight-light">I <b>design</b>, <b>code</b> and <b>explore</b>.</h5>
+    					<h5 class="font-weight-light">I <b>explore</b>, <b> design</b> and <b></b>develop.</h5>
     				</div>
     			</div>
     			<div class="align-bottom col-4 banner-img">
@@ -83,6 +83,7 @@
                   animation-name: stoke-fill;
                   animation-duration: 3s;
                   animation-timing-function: ease-in-out;
+                  /* animation-iteration-count: infinite; */
                 }
                 @keyframes stoke-fill {
                   0%{stroke-dashoffset: -1800;}
@@ -226,15 +227,16 @@
       							</a>
                   {% endif %}
                   {% if item.link_type == "overlay" %}
-      							<a onclick="show_modal('{{item.link}}')" class="cursor-pointer overlay-project">
-      								<div class="p-5 bg-blue-grey-light">
+      							<a onclick="show_modal('{{item.link}}')" class="cursor-pointer overlay-project shadow-lg">
+                      <img class="img-fluid" src={{item.image}} />
+                      <div class="px-5 pt-3 pb-5 bg-blue-grey-light">
       									<div class="white project-title">
       										<h5>{{item.title}}</h5>
       									</div>
-      									<div class="blue-grey project-description mb-3">
+      									<div class="blue-grey project-description">
       										<h6><b>{{item.description}}</b></h6>
       									</div>
-                        <em class="blue-grey">{{item.tags}}</em>
+                        <em class="">{{item.tags}}</em>
       								</div>
       							</a>
                   {% endif %}

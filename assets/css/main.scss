@@ -109,8 +109,11 @@ main{
       // opacity: 1;
       background-color: #49565D;
       // min-height: 200px;
+      *{
+        color: $dark-grey !important;
+      }
       .project-description{
-        color: $dark-grey;
+
       }
     }
   }
@@ -217,4 +220,8 @@ a:hover{
 .scroll-animations{
   opacity: 0;
   transition: opacity 1s;
+}
+
+section#projects{
+  background: #23292b !important;
 }
