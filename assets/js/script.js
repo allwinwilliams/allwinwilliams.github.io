@@ -3,7 +3,13 @@ function show_modal(url){
   modal_object.attr("data", url);
   $('#modal-body-space').html(modal_object);
   $('#projectModal').modal('show');
+  $('html').css('overflow-y','hidden');
 }
+
+function close_modal(){
+  $('html').css('overflow-y','scroll');
+}
+
 
 $(document).ready(function() {
 

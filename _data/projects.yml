@@ -64,12 +64,12 @@
   image: "/projects/gmo-food-study/assets/images/card.png"
   link_type: overlay
 
-# - title: Research on inter-organisational communication channels
-#   description: Labelling GMO foods to keep customers informed
-#   tags: User Research, Research and Analysis
-#   link: "/projects/inter-organisational-communication"
-#   image: "/projects/inter-organisational-communication/assets/images/card.png"
-#   link_type: overlay
+- title: Research on inter-organisational communication channels
+  description: Labelling GMO foods to keep customers informed
+  tags: User Research, Research and Analysis
+  link: "/projects/inter-organisational-communication"
+  image: "/projects/inter-organisational-communication/assets/images/card.png"
+  link_type: overlay
 
 # - title: my modal project
 #   description: Labelling GMO foods to keep the consumers informed
