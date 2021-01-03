@@ -195,7 +195,7 @@
     	</section>
 
     	<section id="projects" class="nbg-dark-grey py-5">
-    		<div class="container text-center w-sm-50 py-5">
+    		<div class="mx-5 text-center w-sm-50 py-5">
     			<div class="section-title blue-grey mb-5">
     				<h2>Projects<h2>
     			</div>
@@ -229,14 +229,14 @@
                   {% if item.link_type == "overlay" %}
       							<a onclick="show_modal('{{item.link}}')" class="cursor-pointer overlay-project shadow-lg">
                       <img class="img-fluid" src={{item.image}} />
-                      <div class="px-5 pt-3 pb-5 bg-blue-grey-light">
+                      <div class="px-5 pt-3 pb-4 bg-blue-grey-light">
       									<div class="white project-title">
       										<h5>{{item.title}}</h5>
       									</div>
       									<div class="blue-grey project-description">
       										<h6><b>{{item.description}}</b></h6>
       									</div>
-                        <em class="">{{item.tags}}</em>
+                        <em class="invisible">{{item.tags}}</em>
       								</div>
       							</a>
                   {% endif %}
