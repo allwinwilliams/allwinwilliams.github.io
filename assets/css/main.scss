@@ -51,7 +51,8 @@ body{
 }
 
 #banner{
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 1200px;
   // position: relative;
   // transform-style: preserve-3d;
   background: rgb(85,191,89);
