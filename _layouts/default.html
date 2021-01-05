@@ -172,7 +172,8 @@
     			</div>
     			<div class="row mx-auto projects-container">
     				{% for item in site.data.projects %}
-    						<div class="col-12 col-md-6 my-3 project scroll-animations hover-animations animated">
+    						<!-- <div class="col-12 col-md-6 my-3 project scroll-animations hover-animations animated"> -->
+                  <div class="col-12 col-md-6 my-3 project hover-animations animated">
                   {% if item.link_type == "external" %}
       							<a href={{item.link}} target="_blank" class="external-project">
       								<div class="p-5 bg-blue-grey-light">
