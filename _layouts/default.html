@@ -200,10 +200,10 @@
                   {% endif %}
                   {% if item.link_type == "overlay" %}
                     {% if item.project_type == "main" %}
-                      <div class="col-12 col-md-6 my-3 project hover-animations animated">
+                      <div class="col-12 col-md-6 my-3 project scroll-animations hover-animations animated">
                     {% endif %}
                     {% if item.project_type == "hidden" %}
-                      <div class="col-12 col-md-6 my-3 project hover-animations animated d-none hidden-project">
+                      <div class="col-12 col-md-6 my-3 project d-none hidden-project hover-animations animated">
                     {% endif %}
         							<a onclick="show_modal('{{item.link}}')" class="cursor-pointer overlay-project shadow-lg">
                         <img class="img-fluid" src={{item.image}} />
@@ -222,10 +222,10 @@
     				{% endfor %}
             {{display_project}}
     			</div>
-          <div class="container">
+          <div class="container scroll-animations animated">
             <div class="row text-center mt-5 px-3">
               <a id="more-projects" class="col-12 btn bg-blue-grey-light rounded-0 mx-auto  py-4 white" >
-                <h6 class="d-inline">More Projects</h6>
+                <h6 class="d-inline">More projects</h6>
                 <i class="fas fa-chevron-down ml-2"></i>
               </a>
             </div>
