@@ -13,6 +13,7 @@
   link: "/projects/sounds-of-my-action"
   image: "/projects/sounds-of-my-action/assets/images/card.png"
   link_type: overlay
+  project_type: main
 
 # - title: Collaboration in music production
 #   description: Improving workflow when stakeholders are in remote locations
@@ -25,6 +26,7 @@
   link: "/projects/collaboration-in-music-production"
   image: "/projects/collaboration-in-music-production/assets/images/card.png"
   link_type: overlay
+  project_type: main
 
 # - title: Research on inter-organisational communication channels
 #   description: Labelling GMO foods to keep customers informed
@@ -42,6 +44,7 @@
   link: "/projects/integrated-thermal-scanning-hand-sanitizing"
   image: "/projects/integrated-thermal-scanning-hand-sanitizing/assets/images/card.png"
   link_type: overlay
+  project_type: main
 
 # - title: A portable air purifier
 #   description: Helping tackle outdoor air pollution
@@ -56,6 +59,7 @@
   link: "/projects/farm-status-visualisation"
   image: "/projects/farm-status-visualisation/assets/images/card.png"
   link_type: overlay
+  project_type: main
 
 - title: A study on GMO food
   description: Labelling GMO foods to keep the consumers informed
@@ -63,6 +67,7 @@
   link: "/projects/gmo-food-study"
   image: "/projects/gmo-food-study/assets/images/card.png"
   link_type: overlay
+  project_type: hidden
 
 - title: Research on inter-organisational communication channels
   description: Labelling GMO foods to keep customers informed
@@ -70,6 +75,7 @@
   link: "/projects/inter-organisational-communication"
   image: "/projects/inter-organisational-communication/assets/images/card.png"
   link_type: overlay
+  project_type: hidden
 
 # - title: my modal project
 #   description: Labelling GMO foods to keep the consumers informed

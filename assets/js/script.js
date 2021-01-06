@@ -32,7 +32,6 @@ $(document).ready(function() {
   // If element is scrolled into view, fade it in
 
   $(window).scroll(function() {
-    console.log("scrolling");
     $('.scroll-animations.animated').each(function() {
       if (isScrolledIntoView(this) === true && $(this).css('opacity') != 1) {
         $(this).css('opacity', '1');
@@ -45,12 +44,16 @@ $(document).ready(function() {
     });
   });
   $('.hover-animations').hover(function(){
-    console.log("hovered");
-    console.log(this);
     $(this).addClass('animate__animated animate__headShake');
     $(this).bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd",
       function(){
         $(this).removeClass('animate__animated animate__headShake');
       });
-  })
+  });
+
+  $('#more-projects').click(function(){
+    $('.hidden-project').removeClass('d-none');
+    $('.hidden-project').addClass('animate__animated animate__fadeInUp');
+    $(this).addClass('d-none');
+  });
 });

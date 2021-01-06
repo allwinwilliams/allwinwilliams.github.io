@@ -108,7 +108,7 @@ main{
   .project a:hover{
     div{
       // opacity: 1;
-      background-color: #49565D;
+      background-color: $blue-grey-dull;
       // min-height: 200px;
       *{
         color: $dark-grey !important;
@@ -120,6 +120,9 @@ main{
 
       }
     }
+  }
+  a#more-projects:hover{
+    background-color: $blue-grey-dull;
   }
 }
 

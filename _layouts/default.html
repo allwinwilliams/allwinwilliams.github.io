@@ -80,13 +80,13 @@
                     #bold-banner-line{
                       stroke-width:2px;
                       animation-name: stoke-fill;
-                      opacity: 0.5;
+                      opacity: 0.3;
                       animation-duration: 2s;
                       animation-timing-function: ease-in-out;
                     }
                     @keyframes stoke-fill {
-                      0%{stroke-dashoffset: -200; opacity: 0.2;}
-                      100%{stroke-dashoffset: 0; opacity: 0.5; }
+                      0%{stroke-dashoffset: -200; opacity: 0.1;}
+                      100%{stroke-dashoffset: 0; opacity: 0.3; }
                     }
                   </style>
                 </defs>
@@ -105,18 +105,16 @@
     	var length = rocket.getTotalLength();
 
     	rocket.style.strokeDasharray = length;
-    	rocket.style.strokeDashoffset = 300;
+    	rocket.style.strokeDashoffset = 200;
 
     	window.addEventListener("scroll", bannerScroll);
 
-    	console.log("rocket.style.strokeDashoffset");
-    	console.log(rocket.style.strokeDashoffset);
+    	// console.log("rocket.style.strokeDashoffset");
+    	// console.log(rocket.style.strokeDashoffset);
 
     	function bannerScroll() {
-    		var scrollpercent = (document.documentElement.scrollTop)/300;
-
+    		var scrollpercent = (document.documentElement.scrollTop)/500;
     	  var draw = length * scrollpercent;
-
     	  rocket.style.strokeDashoffset = draw;
     	}
     </script>
@@ -173,49 +171,65 @@
     			<div class="row mx-auto projects-container">
     				{% for item in site.data.projects %}
     						<!-- <div class="col-12 col-md-6 my-3 project scroll-animations hover-animations animated"> -->
-                  <div class="col-12 col-md-6 my-3 project hover-animations animated">
+
                   {% if item.link_type == "external" %}
-      							<a href={{item.link}} target="_blank" class="external-project">
-      								<div class="p-5 bg-blue-grey-light">
-      									<div class="white project-title">
-      										<h5>{{item.title}}</h5>
-      									</div>
-      									<div class="blue-grey project-description">
-      										<em>{{item.description}}</em>
-      									</div>
-      								</div>
-      							</a>
+                    <div class="col-12 col-md-6 my-3 project hover-animations animated">
+        							<a href={{item.link}} target="_blank" class="external-project">
+        								<div class="p-5 bg-blue-grey-light">
+        									<div class="white project-title">
+        										<h5>{{item.title}}</h5>
+        									</div>
+        									<div class="blue-grey project-description">
+        										<em>{{item.description}}</em>
+        									</div>
+        								</div>
+        							</a>
                   {% endif %}
                   {% if item.link_type == "internal" %}
-      							<a href={{item.link}}  class="internal-project">
-      								<div class="p-5 bg-blue-grey-light">
-      									<div class="white project-title">
-      										<h5>{{item.title}}</h5>
-      									</div>
-      									<div class="blue-grey project-description">
-      										<em>{{item.description}}</em>
-      									</div>
-      								</div>
-      							</a>
+                    <div class="col-12 col-md-6 my-3 project hover-animations animated">
+        							<a href={{item.link}}  class="internal-project">
+        								<div class="p-5 bg-blue-grey-light">
+        									<div class="white project-title">
+        										<h5>{{item.title}}</h5>
+        									</div>
+        									<div class="blue-grey project-description">
+        										<em>{{item.description}}</em>
+        									</div>
+        								</div>
+        							</a>
                   {% endif %}
                   {% if item.link_type == "overlay" %}
-      							<a onclick="show_modal('{{item.link}}')" class="cursor-pointer overlay-project shadow-lg">
-                      <img class="img-fluid" src={{item.image}} />
-                      <div class="px-5 pt-3 pb-4 bg-blue-grey-light">
-      									<div class="white project-title">
-      										<h5>{{item.title}}</h5>
-      									</div>
-      									<div class="blue-grey project-description">
-      										<h6><b>{{item.description}}</b></h6>
-      									</div>
-                        <em class="invisible">{{item.tags}}</em>
-      								</div>
-      							</a>
+                    {% if item.project_type == "main" %}
+                      <div class="col-12 col-md-6 my-3 project hover-animations animated">
+                    {% endif %}
+                    {% if item.project_type == "hidden" %}
+                      <div class="col-12 col-md-6 my-3 project hover-animations animated d-none hidden-project">
+                    {% endif %}
+        							<a onclick="show_modal('{{item.link}}')" class="cursor-pointer overlay-project shadow-lg">
+                        <img class="img-fluid" src={{item.image}} />
+                        <div class="px-5 pt-3 pb-4 bg-blue-grey-light">
+        									<div class="white project-title">
+        										<h5>{{item.title}}</h5>
+        									</div>
+        									<div class="blue-grey project-description">
+        										<h6><b>{{item.description}}</b></h6>
+        									</div>
+                          <em class="invisible">{{item.tags}}</em>
+        								</div>
+        							</a>
                   {% endif %}
     						</div>
     				{% endfor %}
             {{display_project}}
     			</div>
+          <div class="container">
+            <div class="row text-center mt-5 px-3">
+              <a id="more-projects" class="col-12 btn bg-blue-grey-light rounded-0 mx-auto  py-4 white" >
+                <h6 class="d-inline">More Projects</h6>
+                <i class="fas fa-chevron-down ml-2"></i>
+              </a>
+            </div>
+          </div>
     		</div>
     	</section>
 
