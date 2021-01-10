@@ -57,7 +57,7 @@
   link: "/projects/portable-air-purifier"
   image: "/projects/portable-air-purifier/assets/images/card.png"
   link_type: overlay
-  project_type: main
+  project_type: hidden
 
 - title: A study on GMO food
   description: Labelling GMO foods to keep the consumers informed
