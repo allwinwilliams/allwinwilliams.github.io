@@ -44,7 +44,7 @@ $(document).ready(function() {
     });
   });
   $('.hover-animations').hover(function(){
-    $(this).removeClass('animate__animated animate__fadeInUp');
+    $(this).removeClass('animate__animated animate__bounceInUp');
     $(this).addClass('animate__animated animate__headShake');
     $(this).bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd",
       function(){
@@ -54,7 +54,7 @@ $(document).ready(function() {
 
   $('#more-projects').click(function(){
     $('.hidden-project').removeClass('d-none');
-    $('.hidden-project').addClass('animate__animated animate__fadeInUp');
+    $('.hidden-project').addClass('animate__animated animate__bounceInUp');
 
     $(this).addClass('d-none');
   });

@@ -1,7 +1,3 @@
-# - title: Evaluation portal for faculties
-#   description: Redesigning the interface
-#   link: /
-
 # - title: The sounds of my action
 #   description: Making music from the movement of hands
 #   link: "https://medium.com/@allwinwilliams/the-sounds-of-my-action-an-interaction-design-project-902f7ce5e413"
@@ -38,6 +34,7 @@
 #   link: "https://www.behance.net/gallery/98677575/A-design-project-on-Genetically-modified-foods"
 #   link_type: external
 
+
 - title: Thermal scanning and hand sanitising
   description: Imagining public spaces during COVID-19 times
   tags: Tangible interface, Multimodal product design
@@ -46,18 +43,19 @@
   link_type: overlay
   project_type: main
 
-# - title: A portable air purifier
-#   description: Helping tackle outdoor air pollution
-#   tags: Tangible interface, Smart device
-#   link: "/projects/portable-air-purifier"
-#   image: "/projects/portable-air-purifier/assets/images/card.png"
-#   link_type: overlay
-
 - title: Farm status visualisation
   description: Visualising to have an emotional connection
   tags: Information design, Data visualisation
   link: "/projects/farm-status-visualisation"
   image: "/projects/farm-status-visualisation/assets/images/card.png"
+  link_type: overlay
+  project_type: main
+
+- title: A portable air purifier
+  description: Helping tackle outdoor air pollution
+  tags: Tangible interface, Smart device
+  link: "/projects/portable-air-purifier"
+  image: "/projects/portable-air-purifier/assets/images/card.png"
   link_type: overlay
   project_type: main
 
@@ -76,8 +74,3 @@
   image: "/projects/inter-organisational-communication/assets/images/card.png"
   link_type: overlay
   project_type: hidden
-
-# - title: my modal project
-#   description: Labelling GMO foods to keep the consumers informed
-#   link: "/projects/test"
-#   link_type: overlay
