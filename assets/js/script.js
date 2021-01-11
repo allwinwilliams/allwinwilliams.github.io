@@ -6,10 +6,9 @@ function show_modal(url){
   $('html').css('overflow-y','hidden');
 }
 
-function close_modal(){
-  $('html').css('overflow-y','scroll');
-}
-
+$('#projectModal').on('hidden.bs.modal', function(){
+    $('html').css('overflow-y','scroll');
+});
 
 $(document).ready(function() {
 
