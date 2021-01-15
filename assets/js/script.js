@@ -42,7 +42,7 @@ $(document).ready(function() {
       }
     });
   });
-  $('.hover-animations').hover(function(){
+  $('.hover-animations').mouseover(function(){
     $(this).removeClass('animate__animated animate__bounceInUp');
     $(this).addClass('animate__animated animate__headShake');
     $(this).bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd",

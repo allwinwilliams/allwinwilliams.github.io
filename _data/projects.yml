@@ -59,18 +59,26 @@
   link_type: overlay
   project_type: hidden
 
-- title: A study on GMO food
-  description: Labelling GMO foods to keep the consumers informed
-  tags: User Research, Research and Analysis
-  link: "/projects/gmo-food-study"
-  image: "/projects/gmo-food-study/assets/images/card.png"
-  link_type: overlay
-  project_type: hidden
-
 - title: Inter-organisational communication channels
   description: A research study
   tags: User Research, Research and Analysis
   link: "/projects/inter-organisational-communication"
   image: "/projects/inter-organisational-communication/assets/images/card.png"
+  link_type: overlay
+  project_type: hidden
+
+- title: Reimagining faucets
+  description: Making faucets truly touchless
+  tags: Tangible interface
+  link: "/projects/interactive-faucet"
+  image: "/projects/interactive-faucet/assets/images/card.png"
+  link_type: overlay
+  project_type: hidden
+
+- title: A study on GMO food
+  description: Labelling GMO foods to keep the consumers informed
+  tags: User Research, Research and Analysis
+  link: "/projects/gmo-food-study"
+  image: "/projects/gmo-food-study/assets/images/card.png"
   link_type: overlay
   project_type: hidden
