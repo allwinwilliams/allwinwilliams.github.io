@@ -34,6 +34,22 @@
 #   link: "https://www.behance.net/gallery/98677575/A-design-project-on-Genetically-modified-foods"
 #   link_type: external
 
+- title: Farm status visualisation
+  description: Visualising to have an emotional connection
+  tags: Information design, Data visualisation
+  link: "/projects/farm-status-visualisation"
+  image: "/projects/farm-status-visualisation/assets/images/card.png"
+  link_type: overlay
+  project_type: main
+
+- title: Inter-organisational communication channels
+  description: A research study
+  tags: User Research, Research and Analysis
+  link: "/projects/inter-organisational-communication"
+  image: "/projects/inter-organisational-communication/assets/images/card.png"
+  link_type: overlay
+  project_type: main
+
 
 - title: Thermal scanning and hand sanitising
   description: Imagining public spaces during COVID-19 times
@@ -43,29 +59,13 @@
   link_type: overlay
   project_type: main
 
-- title: Farm status visualisation
-  description: Visualising to have an emotional connection
-  tags: Information design, Data visualisation
-  link: "/projects/farm-status-visualisation"
-  image: "/projects/farm-status-visualisation/assets/images/card.png"
-  link_type: overlay
-  project_type: main
-
 - title: A portable air purifier
   description: Helping tackle outdoor air pollution
   tags: Tangible interface, Smart device
   link: "/projects/portable-air-purifier"
   image: "/projects/portable-air-purifier/assets/images/card.png"
   link_type: overlay
-  project_type: hidden
-
-- title: Inter-organisational communication channels
-  description: A research study
-  tags: User Research, Research and Analysis
-  link: "/projects/inter-organisational-communication"
-  image: "/projects/inter-organisational-communication/assets/images/card.png"
-  link_type: overlay
-  project_type: hidden
+  project_type: main
 
 - title: Reimagining faucets
   description: Making faucets truly touchless
