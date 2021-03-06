@@ -42,6 +42,14 @@
   link_type: overlay
   project_type: main
 
+- title: Sentiments from emojis
+  description: Visualising real-time emoji data from twitter
+  tags: Data Visualisation, Exploration
+  link: "/projects/twitter-emoji-sentiments"
+  image: "/projects/twitter-emoji-sentiments/assets/images/card.png"
+  link_type: overlay
+  project_type: main
+
 - title: Inter-organisational communication channels
   description: A research study
   tags: User Research, Research and Analysis
@@ -49,7 +57,6 @@
   image: "/projects/inter-organisational-communication/assets/images/card.png"
   link_type: overlay
   project_type: main
-
 
 - title: Thermal scanning and hand sanitising
   description: Imagining public spaces during COVID-19 times
@@ -65,7 +72,7 @@
   link: "/projects/portable-air-purifier"
   image: "/projects/portable-air-purifier/assets/images/card.png"
   link_type: overlay
-  project_type: main
+  project_type: hidden
 
 - title: Reimagining faucets
   description: Making faucets truly touchless
