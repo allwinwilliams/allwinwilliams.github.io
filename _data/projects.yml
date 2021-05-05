@@ -3,6 +3,30 @@
 #   link: "https://medium.com/@allwinwilliams/the-sounds-of-my-action-an-interaction-design-project-902f7ce5e413"
 #   link_type: external
 
+- title: Farm status visualisation
+  description: Visualising to have an emotional connection
+  tags: Information design, Data visualisation
+  link: "/projects/farm-status-visualisation"
+  image: "/projects/farm-status-visualisation/assets/images/card.png"
+  link_type: overlay
+  project_type: main
+
+- title: Sentiments from emojis
+  description: Visualising real-time emoji data from twitter
+  tags: Data Visualisation, Exploration
+  link: "/projects/twitter-emoji-sentiments"
+  image: "/projects/twitter-emoji-sentiments/assets/images/card.png"
+  link_type: overlay
+  project_type: main
+
+- title: Thermal scanning and hand sanitising
+  description: Imagining public spaces during COVID-19 times
+  tags: Tangible interface, Multimodal product design
+  link: "/projects/integrated-thermal-scanning-hand-sanitizing"
+  image: "/projects/integrated-thermal-scanning-hand-sanitizing/assets/images/card.png"
+  link_type: overlay
+  project_type: main
+
 - title: The sounds of my action
   description: Making music from the movement of hands
   tags: Interactive Installation, Sound Design, Music
@@ -15,6 +39,14 @@
 #   description: Improving workflow when stakeholders are in remote locations
 #   link: "https://medium.com/students-nidblr/collaboration-in-music-production-a-design-research-analysis-case-study-ccb93de0c9bb"
 #   link_type: external
+
+- title: Reimagining faucets
+  description: Making faucets truly touchless
+  tags: Tangible interface
+  link: "/projects/interactive-faucet"
+  image: "/projects/interactive-faucet/assets/images/card.png"
+  link_type: overlay
+  project_type: main
 
 - title: Collaboration in music production
   description: Improving workflow when stakeholders are in remote locations
@@ -34,37 +66,13 @@
 #   link: "https://www.behance.net/gallery/98677575/A-design-project-on-Genetically-modified-foods"
 #   link_type: external
 
-- title: Farm status visualisation
-  description: Visualising to have an emotional connection
-  tags: Information design, Data visualisation
-  link: "/projects/farm-status-visualisation"
-  image: "/projects/farm-status-visualisation/assets/images/card.png"
-  link_type: overlay
-  project_type: main
-
-- title: Sentiments from emojis
-  description: Visualising real-time emoji data from twitter
-  tags: Data Visualisation, Exploration
-  link: "/projects/twitter-emoji-sentiments"
-  image: "/projects/twitter-emoji-sentiments/assets/images/card.png"
-  link_type: overlay
-  project_type: main
-
 - title: Inter-organisational communication channels
   description: A research study
   tags: User Research, Research and Analysis
   link: "/projects/inter-organisational-communication"
   image: "/projects/inter-organisational-communication/assets/images/card.png"
   link_type: overlay
-  project_type: main
-
-- title: Thermal scanning and hand sanitising
-  description: Imagining public spaces during COVID-19 times
-  tags: Tangible interface, Multimodal product design
-  link: "/projects/integrated-thermal-scanning-hand-sanitizing"
-  image: "/projects/integrated-thermal-scanning-hand-sanitizing/assets/images/card.png"
-  link_type: overlay
-  project_type: main
+  project_type: hidden
 
 - title: A portable air purifier
   description: Helping tackle outdoor air pollution
@@ -74,13 +82,7 @@
   link_type: overlay
   project_type: hidden
 
-- title: Reimagining faucets
-  description: Making faucets truly touchless
-  tags: Tangible interface
-  link: "/projects/interactive-faucet"
-  image: "/projects/interactive-faucet/assets/images/card.png"
-  link_type: overlay
-  project_type: hidden
+
 
 - title: A study on GMO food
   description: Labelling GMO foods to keep the consumers informed

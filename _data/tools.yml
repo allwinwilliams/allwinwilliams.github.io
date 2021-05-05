@@ -16,6 +16,7 @@
     - name: JQuery
     - name: p5.js
     - name: Python
+    - name: Java
     - name: React JS
     - name: Ruby on Rails
     - name: Arduino
