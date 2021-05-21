@@ -61,12 +61,20 @@
   image: "/projects/interactive-faucet/assets/images/card.png"
   link_type: overlay
   project_type: hidden
-  
+
 - title: A portable air purifier
   description: Helping tackle outdoor air pollution
   tags: Tangible interface, Smart device
   link: "/projects/portable-air-purifier"
   image: "/projects/portable-air-purifier/assets/images/card.png"
+  link_type: overlay
+  project_type: hidden
+
+- title: Gullak
+  description: Financial planning for people with daily cashflow
+  tags: System Design, UX, Mobile application
+  link: "/projects/gullak-financial-planning"
+  image: "/projects/gullak-financial-planning/assets/images/card.png"
   link_type: overlay
   project_type: hidden
 
