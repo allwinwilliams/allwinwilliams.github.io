@@ -1,0 +1,76 @@
+---
+layout: default
+title: "Allwin Williams - Interaction Designer"
+---
+<header id="landing-header" class="d-flex align-items-center">
+  <div class="container">
+    <h1>
+      Hello there,
+      <br />I'm Allwin Williams
+    </h1>
+    <p>
+      I am an interaction designer whose interest lies in digital product UX and experimenting with tangible interactions.
+      <br />I like to explore the internet💻, electronics🕹 and music🎹
+    </p>
+  </div>
+</header>
+<section id="about-me" class="container my-5">
+  <div class="row">
+    <div class="col-4">
+      <div class="image-container p-2">
+        <img class="w-100 br-24 shadow-large" src="{{ "/assets/images/allwin-photo.png" | relative_url }}" />
+      </div>
+    </div>
+    <div class="col-8 p-2">
+      <div class="br-24 shadow-large h-100 p-4 px-5 d-flex align-items-center">
+        <div>
+          <h2 class="">A brief history of me</h2>
+          <p>
+            I’m from Tiruchirappalli, Tamil Nadu and got my Bachelor of Technology degree in Information Technology from Coimbatore Institute of Technology, Coimbatore, Tamil Nadu. Currently I’m pursing my master’s degree in Interaction Design from National Institute of Design, Bengaluru, Karnataka.
+            <br /><br />
+            I like watching crime thrillers, listening to AR Rahman and playing piano.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="recent-projects">
+  <h1 class="text-center my-5">Recent projects</h1>
+  <div class="container">
+    <div class="row">
+      {% assign projects = site.projects | sort:"order" %}
+      {% for project in projects limit: 3 %}
+        {% assign project_tags = "" %}
+        {% for tag in project.tags %}
+          {% assign current_tag_slug = tag | slugify %}
+          {% assign project_tags = project_tags | append: current_tag_slug | append: " "%}
+        {% endfor %}
+          <div class="col-12 col-md-6 col-lg-4 project {{ project_tags }}">
+            <a href="{{ project.url }}">
+              <div class="project-container br-24 shadow-large h-100">
+                <img class="w-100 br-24" src="{{ "/assets/images/project-card.png" | relative_url }}" />
+                <div class="project-tags">
+                  {% for tag in project.tags %}
+                    <!-- <a class="project-tag shadow-small" href="#{{ tag | slugify }}">{{tag}}</a> -->
+                    <p class="d-inline project-tag shadow-small">{{tag}}</p>
+                  {% endfor %}
+                </div>
+                <div class="project-title" >
+                  <h5>{{project.title}}</h5>
+                  <p>{{project.description}}</p>
+                </div>
+            </div>
+            </a>
+          </div>
+        {% endfor %}
+    </div>
+  </div>
+  <div class="text-center">
+    <h5>
+      <a href="/projects" class="btn all-projects-button">
+        See all projects
+      </a>
+    </h5>
+  </div>
+</section>

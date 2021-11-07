@@ -1,0 +1,102 @@
+---
+layout: default
+title: "Allwin Williams - Interaction Designer"
+permalink: /projects
+---
+<div class="container mt-2 mt-md-5 px-4 px-md-0">
+  <header class="pt-4">
+      <h1>Projects</h1>
+      <div class="filter-tag-list d-flex flex-wrap">
+        <a class="filter-tag" id="all-project" href="#">All projects</a>
+        {% for tag in site.data.tags %}
+            <a class="filter-tag" id="{{ tag | slugify }}-filter" href="#{{ tag | slugify }}">{{ tag }}</a>
+        {% endfor %}
+      </div>
+  </header>
+  <div id="projects-section" class="row">
+    {% assign projects = site.projects | sort:"order" %}
+    {% for project in projects %}
+      {% assign project_tags = "" %}
+      {% for tag in project.tags %}
+        {% assign current_tag_slug = tag | slugify %}
+        {% assign project_tags = project_tags | append: current_tag_slug | append: " "%}
+      {% endfor %}
+        <div class="col-12 col-md-6 col-lg-4 project {{ project_tags }}">
+          <a href="{{ project.url }}">
+            <div class="project-container br-24 shadow-large h-100">
+              <img class="w-100 br-24" src="{{ "/assets/images/project-card.png" | relative_url }}" />
+              <div class="project-tags">
+                {% for tag in project.tags %}
+                  <!-- <a class="project-tag shadow-small" href="#{{ tag | slugify }}">{{tag}}</a> -->
+                  <p class="d-inline project-tag shadow-small">{{tag}}</p>
+                {% endfor %}
+              </div>
+              <div class="project-title" >
+                <h5>{{project.title}}</h5>
+                <p>{{project.description}}</p>
+              </div>
+          </div>
+          </a>
+        </div>
+      {% endfor %}
+  </div>
+</div>
+<script>
+
+let updateHash = () => {
+  let hash = location.hash;
+  hash = hash.replace("#","");
+
+  let projects = document.getElementsByClassName("project");
+  projects = Array.from(projects);
+
+  let filters = document.getElementsByClassName("filter-tag");
+  filters = Array.from(filters);
+  filters.map(filter => {
+      filter.classList.remove("active");
+      console.log(filter);
+  });
+
+  if(hash === ""){
+    projects.map(project => {
+      document.getElementById("projects-section").classList.add("animate_projectOut");
+      project.classList.remove("d-none");
+      setTimeout(() => {
+        document.getElementById("projects-section").classList.remove("animate_projectOut")
+        document.getElementById("projects-section").classList.add("animate_projectIn")
+      }
+      , 500);
+    }
+    );
+    document.getElementById("all-project").classList.add("active");
+    return;
+  }
+
+  document.getElementById("projects-section").classList.add("animate_projectOut");
+  setTimeout(() => {
+    document.getElementById("projects-section").classList.remove("animate_projectOut")
+    document.getElementById("projects-section").classList.add("animate_projectIn")
+  }
+  , 500);
+  setTimeout(() => {
+    document.getElementById("projects-section").classList.remove("animate_projectIn")
+  }
+    , 1000);
+  projects.map(project => {
+    console.log(project);
+    if(project.classList.value.toLowerCase().search(hash.toLowerCase()) === -1){
+      setTimeout(() => project.classList.add("d-none"), 500);
+    } else {
+      console.log(document.getElementById(hash));
+      document.getElementById(`${hash}-filter`).classList.add("active");
+      setTimeout(() => project.classList.remove("d-none"), 500);
+
+    }
+  });
+};
+
+window.onload = updateHash;
+window.onhashchange = updateHash;
+
+
+</script>

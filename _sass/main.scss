@@ -1,0 +1,281 @@
+$backgroundColor: #ffffff;
+$bodyColor: #000000;
+$bodyFont: 'Karla',"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+@import "colors";
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600;700&family=Rubik:wght@300;500;700;900&display=swap');
+
+body {
+  background: $backgroundColor;
+  color: $black;;
+  font-family: $bodyFont;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rubik', sans-serif;
+}
+
+p{
+  font-family: $bodyFont;
+  color: $dark-grey;
+  line-height: 1.6;
+}
+
+.br-16{
+  border-radius: 16px;
+}
+
+.br-24{
+  border-radius: 24px;
+}
+.bg-black{
+  background: $black;
+  color: $white;
+}
+
+.shadow-small{
+  box-shadow: 0px 2px 8px 0px $black25;
+}
+
+.shadow-large{
+  box-shadow: 0px 0px 24px 0px $black25;
+}
+
+nav{
+  margin-top: 3em;
+}
+
+nav li{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+nav a.navbar-link{
+  padding: 0.8em 1.5em;
+  border-radius: 16px;
+  text-decoration: none;
+  color: $black;
+  transition: background-color 0.4s, color 0.2s;
+}
+
+nav a.navbar-link:hover{
+  // color: $black;
+  // background-color: #f7f7f7;
+  background-color: $lighterPrimaryColor;
+  color: $primaryColor;
+  // box-shadow: 0px 2px 8px 0px $black25;
+  // border: 1px solid $primaryColor;
+}
+
+nav a.active{
+  // background-color: $primaryColor;
+  // color: $white;
+  background-color: $lighterPrimaryColor;
+  color: $primaryColor;
+}
+
+nav a.navbar-brand{
+  color: $black;
+  font-family: 'Rubik', sans-serif;
+}
+
+a .project-container{
+  background-color: $white;
+  padding: 1em;
+  box-shadow: 0px 0px 24px 0px $black25;
+  transition: box-shadow 0.4s;
+  img{
+    box-shadow: 0px 0px 16px 0px $black25;
+    transition: box-shadow 0.3s;
+  }
+  .project-tag{
+    box-shadow: 0px 0px 16px 0px $black25;
+    transition: box-shadow 0.3s;
+  }
+}
+
+a:hover .project-container{
+  box-shadow: 0px 1px 4px 0px $black25;
+  img{
+    box-shadow: 0px 2px 4px 0px $black25;
+  }
+  .project-tag{
+    box-shadow: 0px 1px 4px 0px $black25;
+  }
+}
+
+.project{
+  padding: 0.75em;
+  display: block;
+}
+
+.project-tags{
+  margin-left: 8px;
+  position: relative;
+  bottom: 12px;
+}
+
+.project-tag{
+  background-color: $black;
+  color: $white;
+  padding: 8px 16px;
+  margin-right: 4px;
+  border-radius: 24px;
+  text-decoration: none;
+}
+
+.project-tag:hover{
+}
+
+.project a{
+  color: $black;
+  text-decoration: none;
+}
+
+.project-title{
+  margin-top: 0.5em;
+  margin-left: 16px;
+}
+
+.filter-tag-list{
+  margin-bottom: 4em;
+}
+
+.filter-tag-list a{
+  background-color: $white;
+  color: $black;
+  padding: 12px 24px;
+  margin-right: 16px;
+  margin-top: 1rem;
+  border-radius: 24px;
+  text-decoration: none;
+  font-size: 1em;
+  box-shadow: 0px 0px 24px 0px $black25;
+  transition: box-shadow 0.4s, background-color 0.5s, color 0.3s;
+}
+
+.filter-tag-list a:hover{
+  // background-color: $black;
+  // color: $white;
+  box-shadow: 0px 1px 4px 0px $black25;
+}
+
+.filter-tag-list a.active{
+  background-color: $primaryColor;
+  color: $white;
+}
+
+a.all-projects-button{
+  background-color: $black;
+  color: $white;
+  border-radius: 16px;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  box-shadow: 0px 0px 24px 0px $black25;
+  transition: box-shadow 0.4s;
+}
+
+a.all-projects-button:hover{
+  color: $white;
+  box-shadow: 0px 2px 2px 0px $black25;
+}
+
+a.email-link{
+  background-color: $black;
+  color: $white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  margin: 1em 0;
+  border-radius: 16px;
+  box-shadow: 0px 0px 24px 0px $black25;
+  transition: box-shadow 0.4s;
+}
+
+a.email-link:hover{
+  color: $white;
+  box-shadow: 0px 2px 2px 0px $black25;
+}
+
+header#landing-header{
+  height:600px;
+}
+
+#recent-projects{
+  margin: 10rem 0;
+}
+#contact{
+  margin: 10rem 0;
+}
+
+.animate_projectIn {
+  -webkit-animation-name: projectIn;
+  animation-name: projectIn;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+.animate_projectOut {
+  -webkit-animation-name: projectOut;
+  animation-name: projectOut;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes projectIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 5rem, 0);
+    transform: translate3d(0, 5rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes projectOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 5rem, 0);
+    transform: translate3d(0, 5rem, 0);
+  }
+}
+
+@keyframes projectIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 5rem, 0);
+    transform: translate3d(0, 5rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes projectOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 5rem% 0);
+    transform: translate3d(0, 5rem, 0);
+  }
+}

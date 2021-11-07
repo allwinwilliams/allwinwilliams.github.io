@@ -1,0 +1,12 @@
+url: "https://allwinwilliams.com"
+baseurl: "/"
+title: "Allwin Williams"
+tags:
+  - UX
+  - Installation
+  - Whatever
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:title
