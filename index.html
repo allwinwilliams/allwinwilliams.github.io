@@ -47,7 +47,7 @@ title: "Allwin Williams - Interaction Designer"
           {% assign project_tags = project_tags | append: current_tag_slug | append: " "%}
         {% endfor %}
           <div class="col-12 col-md-6 col-lg-4 project {{ project_tags }}">
-            <a href="{{ project.url }}">
+            <a href="{{ project.url  | relative_url}}">
               <div class="project-container br-24 shadow-large h-100">
                 <img class="w-100 br-24" src="{{ "/assets/images/project-card.png" | relative_url }}" />
                 <div class="project-tags">
@@ -68,7 +68,7 @@ title: "Allwin Williams - Interaction Designer"
   </div>
   <div class="text-center">
     <h5>
-      <a href="/projects" class="btn all-projects-button">
+      <a href="{{ "/projects" |  relative_url }}" class="btn all-projects-button">
         See all projects
       </a>
     </h5>
