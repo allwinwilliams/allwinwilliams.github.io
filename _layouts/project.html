@@ -11,26 +11,30 @@
   <body>
     {% include navbar.html %}
     <div class="container mt-4">
-      <a class="back-link shadow-small d-none" href="/project">
+      <a class="back-link" href="/projects">
         <img class="" src="{{ "/assets/images/icons/back.png" | relative_url }}" />
-        <p class="d-inline m-0 mx-2"><strong>All projects</strong></p>
+        <p class="d-inline m-0 mx-2"><strong>Back to all projects</strong></p>
       </a>
       <div class="mt-5">
         {% for tag in page.tags %}
-          <a class="project-tag shadow-small" href="#{{ tag | slugify }}">{{tag}}</a>
+          <!-- <a class="project-tag shadow-small" href="/projects/#{{ tag | slugify }}">{{tag}}</a> -->
+            <a class="project-tag shadow-small" href="#">{{tag}}</a>
         {% endfor %}
       </div>
       <h1 class="mt-4">{{page.title}}</h1>
       <p>{{page.description}}</p>
-      <div class="row my-4 project-summary">
-        <div class="col-4 p-0">
-          <img class="w-100 br-24" src="{{ "/assets/images/project-card.png" | relative_url }}" />
+      <!-- <div class="p-3">
+        <div class="row my-4 project-summary">
+          <div class="col-4 p-0">
+            <img class="w-100 br-24" src="/assets/{{page.url}}/assets/images/card.png" />
+          </div>
+          <div class="col-8 p-0">
+          </div>
         </div>
-        <div class="col-8 p-0">
-        </div>
-      </div>
+      </div> -->
 
       {{ content }}
+      <hr />
     </div>
     {% include footer.html %}
   </body>

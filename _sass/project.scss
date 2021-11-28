@@ -11,18 +11,23 @@ body {
 }
 
 a.back-link{
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   border-radius: 16px;
   color: $black;
-  background-color: $white;
   text-decoration: none;
+}
+
+a.back-link img{
   box-shadow: 0px 0px 16px 0px $black25;
+  padding: .5em;
+  border-radius: .5em;
   transition: box-shadow 0.4s;
 }
 
 a.back-link:hover{
-  color: $black;
-  box-shadow: 0px 1px 6px 0px $black25;
+  img{
+    box-shadow: 0px 1px 6px 0px $black25;
+  }
 }
 
 .project-summary{
