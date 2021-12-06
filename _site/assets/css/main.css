@@ -15,7 +15,9 @@ p { font-family: "Karla", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color
 
 .shadow-large { box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25); }
 
-nav { margin-top: 3em; }
+nav.global-nav { margin-top: 3em; }
+
+nav.home-nav { padding-top: 3.5em; }
 
 nav li { margin-left: 1em; margin-right: 1em; }
 
@@ -28,15 +30,11 @@ nav a.active { background-color: #D7F8CE; color: #54BF6C; }
 nav a.navbar-brand { color: #000000; font-family: 'Rubik', sans-serif; }
 
 a .project-container { background-color: #FFFFFF; padding: 1em; box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25); transition: box-shadow 0.4s; }
-
 a .project-container img { box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25); transition: box-shadow 0.3s; }
-
 a .project-container .project-tag { box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25); transition: box-shadow 0.3s; }
 
 a:hover .project-container { box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25); }
-
 a:hover .project-container img { box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25); }
-
 a:hover .project-container .project-tag { box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25); }
 
 .project { padding: 0.75em; display: block; }
@@ -69,7 +67,9 @@ a.resume-download-link { background-color: #000000; color: #FFFFFF; text-decorat
 
 a.resume-download-link:hover { color: #FFFFFF; box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25); }
 
-header#landing-header { height: 600px; }
+.header-home { background-color: #f4f7f3; }
+
+div#landing-header { height: 650px; }
 
 #recent-projects { margin: 10rem 0; }
 
@@ -83,28 +83,12 @@ header#landing-header { height: 600px; }
 
 .animate_projectOut { -webkit-animation-name: projectOut; animation-name: projectOut; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
 
-@-webkit-keyframes projectIn { from { opacity: 0;
-    -webkit-transform: translate3d(0, 5rem, 0);
-    transform: translate3d(0, 5rem, 0); }
-  to { opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-
+@-webkit-keyframes projectIn { from { opacity: 0; -webkit-transform: translate3d(0, 5rem, 0); transform: translate3d(0, 5rem, 0); }
+  to { opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } }
 @-webkit-keyframes projectOut { from { opacity: 1; }
-  to { opacity: 0;
-    -webkit-transform: translate3d(0, 5rem, 0);
-    transform: translate3d(0, 5rem, 0); } }
-
-@keyframes projectIn { from { opacity: 0;
-    -webkit-transform: translate3d(0, 5rem, 0);
-    transform: translate3d(0, 5rem, 0); }
-  to { opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-
+  to { opacity: 0; -webkit-transform: translate3d(0, 5rem, 0); transform: translate3d(0, 5rem, 0); } }
+@keyframes projectIn { from { opacity: 0; -webkit-transform: translate3d(0, 5rem, 0); transform: translate3d(0, 5rem, 0); }
+  to { opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } }
 @keyframes projectOut { from { opacity: 1; }
-  to { opacity: 0;
-    -webkit-transform: translate3d(0, NaN);
-    transform: translate3d(0, 5rem, 0); } }
-
-/*# sourceMappingURL=main.css.map */
+  to { opacity: 0; -webkit-transform: translate3d(0, NaN); transform: translate3d(0, 5rem, 0); } }
+svg#home-header-bottom { width: 100%; position: absolute; margin-top: -5em; }
