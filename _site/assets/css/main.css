@@ -65,11 +65,19 @@ a.email-link { background-color: #000000; color: #FFFFFF; text-decoration: none;
 
 a.email-link:hover { color: #FFFFFF; box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25); }
 
+a.resume-download-link { background-color: #000000; color: #FFFFFF; text-decoration: none; padding: 0.5rem 1.5rem; border-radius: 16px; box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25); transition: box-shadow 0.4s; }
+
+a.resume-download-link:hover { color: #FFFFFF; box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25); }
+
 header#landing-header { height: 600px; }
 
 #recent-projects { margin: 10rem 0; }
 
 #contact { margin: 10rem 0; }
+
+.resume-display img { box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25); }
+
+.contact-page-content { margin-top: 8em; }
 
 .animate_projectIn { -webkit-animation-name: projectIn; animation-name: projectIn; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-timing-function: ease; animation-timing-function: ease; }
 

@@ -6,8 +6,14 @@ a.back-link img { box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25); padding: .5e
 
 a.back-link:hover img { box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.25); }
 
-.project-summary { background-color: #FFFFFF; box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25); border-radius: 24px; }
+.project-summary { background-color: #FFFFFF; box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25); border-radius: 24px; padding: 0; }
 
 a.project-tag:hover { color: #FFFFFF; box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25); }
+
+.project-details { padding: 1em 4em; }
+
+.project-details .project-detail { margin-top: .5em; }
+
+.project-thumbnail { object-fit: cover; box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25); }
 
 /*# sourceMappingURL=project.css.map */

@@ -4,6 +4,8 @@ title: Remote Collaboration in music production
 description: Remote communication between stakeholders
 tags: [UX, System]
 order: 9
+mentors: Mamata N Rao
+duration: 6 weeks
 ---
 
 <div class="w-100">

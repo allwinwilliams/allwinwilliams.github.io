@@ -34,9 +34,21 @@ a.back-link:hover{
   background-color: $white;
   box-shadow: 0px 0px 16px 0px $black25;
   border-radius: 24px;
+  padding: 0;
 }
 
 a.project-tag:hover{
   color: $white;
   box-shadow: 0px 1px 4px 0px $black25;
+}
+
+.project-details{
+  padding: 1em 4em;
+  .project-detail{
+    margin-top: .5em;
+  }
+}
+.project-thumbnail{
+  object-fit: cover;
+  box-shadow: 0px 0px 16px 0px $black25;
 }

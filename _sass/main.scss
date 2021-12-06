@@ -196,6 +196,21 @@ a.email-link:hover{
   box-shadow: 0px 2px 2px 0px $black25;
 }
 
+a.resume-download-link{
+  background-color: $black;
+  color: $white;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0px 0px 24px 0px $black25;
+  transition: box-shadow 0.4s;
+}
+
+a.resume-download-link:hover{
+  color: $white;
+  box-shadow: 0px 2px 2px 0px $black25;
+}
+
 header#landing-header{
   height:600px;
 }
@@ -205,6 +220,14 @@ header#landing-header{
 }
 #contact{
   margin: 10rem 0;
+}
+
+.resume-display img{
+  box-shadow: 0px 0px 24px 0px $black25;
+}
+
+.contact-page-content {
+  margin-top: 8em;
 }
 
 .animate_projectIn {

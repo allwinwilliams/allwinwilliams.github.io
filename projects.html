@@ -16,6 +16,9 @@ permalink: /projects
   <div id="projects-section" class="row">
     {% assign projects = site.projects | sort:"order" %}
     {% for project in projects %}
+      {% if project.hidden == true %}
+        {% continue %}
+      {% endif %}
       {% assign project_tags = "" %}
       {% for tag in project.tags %}
         {% assign current_tag_slug = tag | slugify %}
