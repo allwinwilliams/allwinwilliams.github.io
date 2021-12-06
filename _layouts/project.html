@@ -28,13 +28,13 @@
       <div class="my-4 w-100">
         <div class="project-summary">
           <div class="row px-2">
-            <div class="col-4 p-0">
+            <div class="col-12 col-md-4 p-0">
               <img class="w-100 h-100 br-24 project-thumbnail" src="/assets/{{page.url}}/assets/images/card.png" />
             </div>
-            <div class="col-8 row project-details d-flex align-items-center">
+            <div class="col-12 col-md-8 row project-details d-flex align-items-center">
 
               {% if page.team %}
-                <div class="col-6 project-detail align-self-start">
+                <div class="col-12 col-md-6 project-detail align-self-start">
                   <h4>Team</h4>
                   {% for member in page.team %}
                     <p>{{member}}</p>
@@ -43,7 +43,7 @@
               {% endif %}
 
                 {% if page.mentors %}
-                  <div class="col-6 project-detail align-self-start">
+                  <div class="col-12 col-md-6 project-detail align-self-start">
                     <h4>Mentors</h4>
                     {% for mentor in page.mentors %}
                       <p>{{mentor}}</p>
@@ -52,7 +52,7 @@
                 {% endif %}
 
                 {% if page.tools %}
-                  <div class="col-6 project-detail align-self-start">
+                  <div class="col-12 col-md-6 project-detail align-self-start">
                     <h4>Tools</h4>
                     {% for tool in page.tools %}
                       <p>{{tool}}</p>
@@ -61,14 +61,14 @@
                 {% endif %}
 
                 {% if page.duration %}
-                  <div class="col-6 project-detail align-self-start">
+                  <div class="col-12 col-md-6 project-detail align-self-start">
                     <h4>Duration</h4>
                       <p>{{page.duration}}</p>
                   </div>
                 {% endif %}
 
                 {% if page.course %}
-                  <div class="col-6 project-detail align-self-start">
+                  <div class="col-12 col-md-6 project-detail align-self-start">
                     <h4>Course</h4>
                       <p>{{page.course}}</p>
                   </div>

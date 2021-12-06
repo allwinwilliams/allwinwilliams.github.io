@@ -55,7 +55,8 @@ nav li{
 }
 
 nav a.navbar-link{
-  padding: 0.8em 1.5em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
   border-radius: 16px;
   text-decoration: none;
   color: $black;
@@ -222,7 +223,10 @@ a.resume-download-link:hover{
 div#landing-header{
   height:650px;
 }
-
+#about-me{
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+}
 #recent-projects{
   margin: 10rem 0;
 }
