@@ -13,6 +13,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Rubik', sans-serif;
+  color: $darkerPrimaryColor;
 }
 
 p{
@@ -28,17 +29,22 @@ p{
 .br-24{
   border-radius: 24px;
 }
+
 .bg-black{
   background: $black;
   color: $white;
 }
 
+.bg-white{
+  background: $white;
+}
+
 .shadow-small{
-  box-shadow: 0px 2px 8px 0px $black25;
+  box-shadow: 0px 2px 8px 0px $shadowColor;
 }
 
 .shadow-large{
-  box-shadow: 0px 0px 24px 0px $black25;
+  box-shadow: 0px 0px 24px 0px $shadowColor;
 }
 
 nav.global-nav{
@@ -47,6 +53,7 @@ nav.global-nav{
 
 nav.home-nav{
   padding-top: 3.5em;
+  background-color: #dcd1ed;
 }
 
 nav li{
@@ -60,7 +67,7 @@ nav a.navbar-link{
   border-radius: 16px;
   text-decoration: none;
   color: $black;
-  transition: background-color 0.4s, color 0.2s;
+  transition: background-color 0.6s, color 0.4s;
 }
 
 nav a.navbar-link:hover{
@@ -68,15 +75,16 @@ nav a.navbar-link:hover{
   // background-color: #f7f7f7;
   background-color: $lighterPrimaryColor;
   color: $primaryColor;
-  // box-shadow: 0px 2px 8px 0px $black25;
+  // box-shadow: 0px 2px 8px 0px $shadowColor;
   // border: 1px solid $primaryColor;
 }
 
 nav a.active{
   // background-color: $primaryColor;
   // color: $white;
-  background-color: $lighterPrimaryColor;
-  color: $primaryColor;
+  background-color: $primaryColor;
+  color: $white;
+  box-shadow: 0px 0px 16px 0px $shadowColor;
 }
 
 nav a.navbar-brand{
@@ -87,25 +95,27 @@ nav a.navbar-brand{
 a .project-container{
   background-color: $white;
   padding: 1em;
-  box-shadow: 0px 0px 24px 0px $black25;
   transition: box-shadow 0.4s;
+  box-shadow: 0px 1px 4px 0px $shadowColor;
   img{
-    box-shadow: 0px 0px 16px 0px $black25;
+    box-shadow: 0px 1px 2px 0px $shadowColor;
     transition: box-shadow 0.3s;
   }
   .project-tag{
-    box-shadow: 0px 0px 16px 0px $black25;
+    box-shadow: 0px 0px 2px 0px $shadowColor;
     transition: box-shadow 0.3s;
   }
+
+
 }
 
 a:hover .project-container{
-  box-shadow: 0px 1px 4px 0px $black25;
+  box-shadow: 0px 0px 24px 0px $shadowColor;
   img{
-    box-shadow: 0px 2px 4px 0px $black25;
+    box-shadow: 0px 0px 16px 0px $shadowColor;
   }
   .project-tag{
-    box-shadow: 0px 1px 4px 0px $black25;
+    box-shadow: 0px 0px 16px 0px $shadowColor;
   }
 }
 
@@ -155,14 +165,14 @@ a:hover .project-container{
   border-radius: 24px;
   text-decoration: none;
   font-size: 1em;
-  box-shadow: 0px 0px 24px 0px $black25;
+  box-shadow: 0px 0px 24px 0px $shadowColor;
   transition: box-shadow 0.4s, background-color 0.5s, color 0.3s;
 }
 
 .filter-tag-list a:hover{
   // background-color: $black;
   // color: $white;
-  box-shadow: 0px 1px 4px 0px $black25;
+  box-shadow: 0px 1px 4px 0px $shadowColor;
 }
 
 .filter-tag-list a.active{
@@ -176,13 +186,13 @@ a.all-projects-button{
   border-radius: 16px;
   padding: 1rem 2rem;
   margin: 2rem 0;
-  box-shadow: 0px 0px 24px 0px $black25;
+  box-shadow: 0px 0px 24px 0px $shadowColor;
   transition: box-shadow 0.4s;
 }
 
 a.all-projects-button:hover{
   color: $white;
-  box-shadow: 0px 2px 2px 0px $black25;
+  box-shadow: 0px 2px 2px 0px $shadowColor;
 }
 
 a.email-link{
@@ -192,13 +202,13 @@ a.email-link{
   padding: 1rem 2rem;
   margin: 1em 0;
   border-radius: 16px;
-  box-shadow: 0px 0px 24px 0px $black25;
+  box-shadow: 0px 0px 24px 0px $shadowColor;
   transition: box-shadow 0.4s;
 }
 
 a.email-link:hover{
   color: $white;
-  box-shadow: 0px 2px 2px 0px $black25;
+  box-shadow: 0px 2px 2px 0px $shadowColor;
 }
 
 a.resume-download-link{
@@ -207,35 +217,38 @@ a.resume-download-link{
   text-decoration: none;
   padding: 0.5rem 1.5rem;
   border-radius: 16px;
-  box-shadow: 0px 0px 24px 0px $black25;
+  box-shadow: 0px 0px 24px 0px $shadowColor;
   transition: box-shadow 0.4s;
 }
 
 a.resume-download-link:hover{
   color: $white;
-  box-shadow: 0px 2px 2px 0px $black25;
+  box-shadow: 0px 2px 2px 0px $shadowColor;
 }
 
 .header-home{
-  background-color: #f4f7f3;
+  // background-color: #f4f7f3;
 }
 
 div#landing-header{
   height:650px;
+  background: url('/assets/images/header-bg.png') center center;
+  background-size: cover;
 }
+
 #about-me{
-  margin-top: 8rem;
-  margin-bottom: 4rem;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
 }
 #recent-projects{
-  margin: 10rem 0;
+  padding: 10rem 0;
 }
 #contact{
-  margin: 10rem 0;
+  padding: 10rem 0;
 }
 
 .resume-display img{
-  box-shadow: 0px 0px 24px 0px $black25;
+  box-shadow: 0px 0px 24px 0px $shadowColor;
 }
 
 .contact-page-content {
@@ -314,8 +327,15 @@ div#landing-header{
     transform: translate3d(0, 5rem, 0);
   }
 }
+
 svg#home-header-bottom{
   width: 100%;
   position: absolute;
-  margin-top: -5em;
+  margin-top: -9vh;
+}
+
+canvas.webgl{
+  position: fixed;
+  height:  90vh !important;
+  z-index: -1;
 }
