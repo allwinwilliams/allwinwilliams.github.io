@@ -52,3 +52,31 @@ a.project-tag:hover{
   object-fit: cover;
   box-shadow: 0px 0px 16px 0px $black25;
 }
+
+.content p{
+  font-size: 1.1rem;
+  margin: 4em 0;
+  line-height: 1.75;
+}
+
+.btn-primary{
+  background-color: $primaryColor;
+  color: $white;
+  transition: background-color 0.5s;
+  border: 0;
+}
+
+.btn-primary:hover{
+  background-color: $darkerPrimaryColor;
+  color: $white;
+}
+
+.btn-secondary{
+  background-color: $black;
+  color: $white;
+}
+
+.btn-secondary:hover{
+  background-color: $black;
+  color: $white;
+}
