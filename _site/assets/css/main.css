@@ -102,3 +102,5 @@ svg#home-header-bottom { width: 100%; position: absolute; margin-top: -9vh; }
 canvas.webgl { position: fixed; height: 90vh !important; z-index: -1; }
 
 nav .navbar-brand img { width: 60px; }
+
+@media (max-width: 767px) { .text-content { margin-right: 8rem !important; } }

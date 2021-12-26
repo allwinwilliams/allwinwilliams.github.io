@@ -351,3 +351,10 @@ canvas.webgl{
 nav .navbar-brand img{
   width: 60px;
 }
+
+@media (max-width: 767px){
+  .text-content {
+      margin-right: 8rem!important;
+  }
+
+}
