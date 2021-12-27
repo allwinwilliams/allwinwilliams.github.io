@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600;700&family=Rubik:wght@300;500;700;900&display=swap");
-body { background: #ffffff; color: #000000; font-family: "Karla", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+body { background: #ffffff; font-family: "Karla", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'Rubik', sans-serif; color: #3e215e; }
 
@@ -27,7 +27,7 @@ nav.home-nav { padding-top: 3.5em; background-color: #dcd1ed; }
 
 nav li { margin-left: 1em; margin-right: 1em; }
 
-nav a.navbar-link { padding-top: 0.8em; padding-bottom: 0.8em; border-radius: 16px; text-decoration: none; color: #000000; transition: background-color 0.6s, color 0.4s; }
+nav a.navbar-link { padding-top: 0.8em; padding-bottom: 0.8em; border-radius: 16px; text-decoration: none; color: #000000; transition: background-color 0.8s, color 0.6s; }
 
 nav a.navbar-link:hover { background-color: #e5c0f9; color: #a567e1; }
 
@@ -55,7 +55,7 @@ a:hover .project-container .project-tag { box-shadow: 0px 0px 16px 0px rgba(74, 
 
 .filter-tag-list { margin-bottom: 4em; }
 
-.filter-tag-list a { background-color: #FFFFFF; color: #000000; padding: 12px 24px; margin-right: 16px; margin-top: 1rem; border-radius: 24px; text-decoration: none; font-size: 1em; box-shadow: 0px 0px 24px 0px rgba(74, 74, 105, 0.25); transition: box-shadow 0.4s, background-color 0.5s, color 0.3s; }
+.filter-tag-list a { background-color: #FFFFFF; color: #000000; padding: 12px 24px; margin-right: 16px; margin-top: 1rem; border-radius: 24px; text-decoration: none; font-size: 1em; box-shadow: 0px 0px 24px 0px rgba(74, 74, 105, 0.25); transition: box-shadow 0.6s, background-color 0.8s, color 0.6s; }
 
 .filter-tag-list a:hover { box-shadow: 0px 1px 4px 0px rgba(74, 74, 105, 0.25); }
 
@@ -103,4 +103,5 @@ canvas.webgl { position: fixed; height: 90vh !important; z-index: -1; }
 
 nav .navbar-brand img { width: 60px; }
 
-@media (max-width: 767px) { .text-content { margin-right: 8rem !important; } }
+@media (max-width: 767px) { .text-content { margin-right: 8rem !important; }
+  #landing-header .container { margin-left: 0em; } }

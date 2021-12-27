@@ -15,7 +15,7 @@
               {% if page.url == link.url or page.url contains link.url and link.url != "/"%}
                 {% assign active = 'active' %}
               {% endif %}
-              <a class="navbar-link {{ active }} mx-2 mx-md-3 px-2 px-md-4" href="{{ link.url | relative_url }}">
+              <a class="navbar-link {{ active }} mx-3 px-3 px-md-4" href="{{ link.url | relative_url }}">
                 {{ link.title }}
               </a>
             {% endfor %}
