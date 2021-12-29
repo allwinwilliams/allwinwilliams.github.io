@@ -4,9 +4,9 @@ title: "Allwin Williams - Interaction Designer"
 permalink: /projects
 ---
 <div class="container mt-2 mt-md-5 px-4 px-md-0">
-  <header class="pt-4">
+  <header class="pt-2 pt-md-4">
       <h1>Projects</h1>
-      <div class="filter-tag-list d-flex flex-wrap">
+      <div class="filter-tag-list d-flex flex-wrap mb-3 mb-md-5">
         <a class="filter-tag" id="all-project" href="#">All projects</a>
         {% for tag in site.data.tags %}
             <a class="filter-tag" id="{{ tag | slugify }}-filter" href="#{{ tag | slugify }}">{{ tag }}</a>
