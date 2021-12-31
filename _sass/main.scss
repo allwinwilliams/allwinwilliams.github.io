@@ -60,7 +60,6 @@ nav.global-nav{
 
 nav.home-nav{
   padding-top: 3.5em;
-  background-color: #dcd1ed;
 }
 
 nav li{
@@ -233,9 +232,10 @@ a.resume-download-link:hover{
   // background-color: #f4f7f3;
 }
 
-div#landing-header{
-  height:650px;
-  background: url('/assets/images/header-bg.png') center center;
+header.header-home{
+  height: 750px;
+  background: url('/assets/images/header-bg.png');
+  background-position: left top;
   background-size: cover;
 }
 
