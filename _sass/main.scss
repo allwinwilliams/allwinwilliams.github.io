@@ -233,7 +233,7 @@ a.resume-download-link:hover{
 }
 
 header.header-home{
-  height: 750px;
+  height: 780px;
   background: url('/assets/images/header-bg.png');
   background-position: left top;
   background-size: cover;
@@ -334,7 +334,7 @@ header.header-home{
 svg#home-header-bottom{
   width: 100%;
   position: absolute;
-  margin-top: -9vh;
+  margin-top: -65px;
 }
 
 canvas.webgl{
@@ -347,12 +347,26 @@ nav .navbar-brand img{
   width: 60px;
 }
 
-@media (max-width: 767px){
-  .text-content {
-      margin-right: 8rem!important;
+emoji{
+}
+
+@media (max-width: 1199px){
+  header.header-home{
+    background-position-x: center;
   }
+}
+
+@media (max-width: 767px){
   #landing-header .container{
     margin-left: 0em;
   }
-
+  header.header-home{
+    background-position-y: bottom;
+    height: 800px;
+    background: linear-gradient(0deg, rgba(230, 203, 232, 0.6), rgba(230, 203, 232, 0.6)), url('/assets/images/header-bg.png');
+    background-size: cover;
+    background-position-x: -600px;
+  }
+  .navbar-link{
+  }
 }

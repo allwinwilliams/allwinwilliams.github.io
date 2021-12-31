@@ -71,7 +71,7 @@ a.resume-download-link { background-color: #000000; color: #FFFFFF; text-decorat
 
 a.resume-download-link:hover { color: #FFFFFF; box-shadow: 0px 2px 2px 0px rgba(74, 74, 105, 0.25); }
 
-header.header-home { height: 750px; background: url("/assets/images/header-bg.png"); background-position: left top; background-size: cover; }
+header.header-home { height: 780px; background: url("/assets/images/header-bg.png"); background-position: left top; background-size: cover; }
 
 #about-me { padding-top: 8rem; padding-bottom: 6rem; }
 
@@ -95,11 +95,12 @@ header.header-home { height: 750px; background: url("/assets/images/header-bg.pn
   to { opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } }
 @keyframes projectOut { from { opacity: 1; }
   to { opacity: 0; -webkit-transform: translate3d(0, NaN); transform: translate3d(0, 5rem, 0); } }
-svg#home-header-bottom { width: 100%; position: absolute; margin-top: -9vh; }
+svg#home-header-bottom { width: 100%; position: absolute; margin-top: -65px; }
 
 canvas.webgl { position: fixed; height: 90vh !important; z-index: -1; }
 
 nav .navbar-brand img { width: 60px; }
 
-@media (max-width: 767px) { .text-content { margin-right: 8rem !important; }
-  #landing-header .container { margin-left: 0em; } }
+@media (max-width: 1199px) { header.header-home { background-position-x: center; } }
+@media (max-width: 767px) { #landing-header .container { margin-left: 0em; }
+  header.header-home { background-position-y: bottom; height: 800px; background: linear-gradient(0deg, rgba(230, 203, 232, 0.6), rgba(230, 203, 232, 0.6)), url("/assets/images/header-bg.png"); background-size: cover; background-position-x: -600px; } }
