@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600;700&family=Rubik:wght@300;500;700;900&display=swap");
-body { background: #ffffff; font-family: "Karla", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+body { background: #FFFFFF; font-family: "Karla", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'Rubik', sans-serif; color: #3e215e; }
 
@@ -75,7 +75,7 @@ a.resume-download-link { background-color: #000000; color: #FFFFFF; text-decorat
 
 a.resume-download-link:hover { color: #FFFFFF; box-shadow: 0px 2px 2px 0px rgba(74, 74, 105, 0.25); }
 
-header.header-home { height: 780px; background: url("/assets/images/header-bg.png"); background-position: left top; background-size: cover; }
+header.header-home { height: 780px; background: url("/assets/images/header-bg.png"); background-position: left top; background-size: cover; background-repeat: no-repeat; }
 
 #about-me { padding-top: 6rem; padding-bottom: 6rem; }
 

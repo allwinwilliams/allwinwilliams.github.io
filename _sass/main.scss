@@ -6,7 +6,7 @@ $bodyFont: 'Karla',"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Se
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600;700&family=Rubik:wght@300;500;700;900&display=swap');
 
 body {
-  background: $backgroundColor;
+  background: $white;
   font-family: $bodyFont;
 }
 
@@ -246,6 +246,8 @@ header.header-home{
   background: url('/assets/images/header-bg.png');
   background-position: left top;
   background-size: cover;
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
 }
 
 #about-me{
