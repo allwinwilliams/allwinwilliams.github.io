@@ -19,6 +19,11 @@ p{
   font-family: $bodyFont;
   color: $dark-grey;
   line-height: 1.6;
+  font-size: 1.06rem;
+}
+
+p.project-tag{
+  font-size: 1rem;
 }
 
 .br-16{
@@ -240,14 +245,14 @@ header.header-home{
 }
 
 #about-me{
-  padding-top: 8rem;
+  padding-top: 6rem;
   padding-bottom: 6rem;
 }
 #recent-projects{
-  padding: 10rem 0;
+  padding: 6rem 0;
 }
 #contact{
-  padding: 10rem 0;
+  padding: 6rem 0;
 }
 
 .resume-display img{
@@ -361,11 +366,10 @@ emoji{
     margin-left: 0em;
   }
   header.header-home{
-    background-position-y: bottom;
+    background-position-y: top;
     height: 800px;
     background: linear-gradient(0deg, rgba(230, 203, 232, 0.6), rgba(230, 203, 232, 0.6)), url('/assets/images/header-bg.png');
-    background-size: cover;
-    background-position-x: -600px;
+    background-position-x: -1000px;
   }
   .navbar-link{
   }
