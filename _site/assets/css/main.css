@@ -5,6 +5,8 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Rubik', sans-serif; color: #3e215e; }
 
 p { font-family: "Karla", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: #333333; line-height: 1.6; font-size: 1.06rem; }
 
+#landing-header .emoji { line-height: 1.21143; font-size: 1.4rem; }
+
 p.project-tag { font-size: 1rem; }
 
 .br-16 { border-radius: 16px; }
