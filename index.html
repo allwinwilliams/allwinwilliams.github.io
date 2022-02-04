@@ -92,7 +92,7 @@ title: "Allwin Williams - Interaction Designer"
   <div class="container">
     <div class="row">
       {% assign projects = site.projects | sort:"order" %}
-      {% for project in projects limit: 3 %}
+      {% for project in projects limit: 6 %}
         {% assign project_tags = "" %}
         {% for tag in project.tags %}
           {% assign current_tag_slug = tag | slugify %}
