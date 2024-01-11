@@ -2,8 +2,8 @@
 layout: project
 title: Remote Collaboration in music production
 description: Remote communication between stakeholders(producer, client and musicians)
-tags: [UX, System]
-order: 9
+tags: [UX, System, Sound]
+order: 4
 mentors: Mamata N Rao
 duration: 6 weeks
 ---
